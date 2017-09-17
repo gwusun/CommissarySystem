@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="7ea62156-3766-46b2-8963-5720451c2475" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APP/Home/Controller/UpWorkController.class.php" afterPath="$PROJECT_DIR$/APP/Home/Controller/UpWorkController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APP/Home/View/Team/modifyTeam.html" afterPath="$PROJECT_DIR$/APP/Home/View/Team/modifyTeam.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/temp.iml" afterPath="$PROJECT_DIR$/.idea/temp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APP/Home/View/UpWork/index.html" afterPath="$PROJECT_DIR$/APP/Home/View/UpWork/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APP/Home/Model/TeamModel.class.php" afterPath="$PROJECT_DIR$/APP/Home/Model/TeamModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/database/blog_team_category.sql" afterPath="$PROJECT_DIR$/Data/database/blog_team_category.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APP/Home/Model/UpWorkModel.class.php" afterPath="$PROJECT_DIR$/APP/Home/Model/UpWorkModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APP/Home/Controller/TeamController.class.php" afterPath="$PROJECT_DIR$/APP/Home/Controller/TeamController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/70251105-35ae-4756-9a62-513d77144d0c.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/70251105-35ae-4756-9a62-513d77144d0c.xml" />
-    </list>
+    <list default="true" readonly="true" id="7ea62156-3766-46b2-8963-5720451c2475" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,22 +47,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="signUp.html" pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;17680bfa-6ba9-44dc-bf75-32a9e0efcd12&gt;/WeChat/NiceEdu/APP/Home/View/Index/signUp.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="128" column="102" lean-forward="true" selection-start-line="128" selection-start-column="11" selection-end-line="128" selection-end-column="102" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#div#6;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="signUp.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WeChat/NiceEdu/APP/Home/View/Index/signUp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2990">
+            <state relative-caret-position="0">
               <caret line="130" column="17" lean-forward="false" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -87,8 +62,8 @@
       <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WeChat/NiceEdu/APP/Home/View/Index/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="53" column="46" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="46" />
+            <state relative-caret-position="-84">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -99,14 +74,33 @@
       <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="69" selection-end-column="14" />
+            <state relative-caret-position="591">
+              <caret line="76" column="2" lean-forward="true" selection-start-line="76" selection-start-column="2" selection-end-line="76" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Home/View/UpWork/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="147" column="41" lean-forward="true" selection-start-line="147" selection-start-column="34" selection-end-line="147" selection-end-column="41" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -118,6 +112,7 @@
       <find>还没有作业提交</find>
       <find>./imgs/</find>
       <find>imgs/</find>
+      <find>vip解析</find>
     </findStrings>
     <replaceStrings>
       <replace>addDropDown</replace>
@@ -144,7 +139,6 @@
         <option value="$PROJECT_DIR$/APP/Home/View/Team/modifyTeam.html" />
         <option value="$PROJECT_DIR$/APP/Home/Controller/UpWorkController.class.php" />
         <option value="$PROJECT_DIR$/APP/Home/Model/UpWorkModel.class.php" />
-        <option value="$PROJECT_DIR$/APP/Home/View/UpWork/index.html" />
         <option value="$PROJECT_DIR$/APP/Home/Model/TeamModel.class.php" />
         <option value="$PROJECT_DIR$/APP/Home/Controller/TeamController.class.php" />
         <option value="$PROJECT_DIR$/WeChat/NiceEdu/index.php" />
@@ -161,6 +155,8 @@
         <option value="&lt;17680bfa-6ba9-44dc-bf75-32a9e0efcd12&gt;/WeChat/NiceEdu/APP/Home/View/Index/index.html" />
         <option value="&lt;17680bfa-6ba9-44dc-bf75-32a9e0efcd12&gt;/WeChat/NiceEdu/APP/Home/View/Index/signUp.html" />
         <option value="$PROJECT_DIR$/WeChat/NiceEdu/APP/Home/View/Index/signUp.html" />
+        <option value="$PROJECT_DIR$/Data/view/information.html" />
+        <option value="$PROJECT_DIR$/APP/Home/View/UpWork/index.html" />
         <option value="$PROJECT_DIR$/readme.txt" />
       </list>
     </option>
@@ -180,9 +176,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-132" />
-    <option name="y" value="246" />
-    <option name="width" value="1195" />
+    <option name="x" value="51" />
+    <option name="y" value="177" />
+    <option name="width" value="1656" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -207,62 +203,41 @@
         <subPane>
           <expand>
             <path>
-              <item name="StuWorkSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StuWorkSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="CommissarySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommissarySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="StuWorkSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StuWorkSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WeChat" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="StuWorkSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StuWorkSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WeChat" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="NiceEdu" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="StuWorkSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StuWorkSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WeChat" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="NiceEdu" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="CommissarySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommissarySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="APP" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="StuWorkSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StuWorkSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WeChat" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="NiceEdu" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="CommissarySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommissarySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="APP" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="StuWorkSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StuWorkSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WeChat" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="NiceEdu" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="CommissarySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommissarySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="APP" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="StuWorkSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StuWorkSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WeChat" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="NiceEdu" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="CommissarySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommissarySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="APP" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="StuWorkSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StuWorkSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WeChat" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="NiceEdu" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="CommissarySystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommissarySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="APP" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="UpWork" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -273,7 +248,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ThinkPHP" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
@@ -283,17 +258,20 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sunwu\PhpstormProjects\CommissarySystem" />
       <recent name="C:\Users\Administrator\PhpstormProjects\StuWorkSystem\WeChat\NiceEdu\APP\Home" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sunwu\PhpstormProjects\CommissarySystem" />
+      <recent name="C:\Users\Sunwu\PhpstormProjects\CommissarySystem\Data\view" />
       <recent name="C:\Users\Administrator\PhpstormProjects\StuWorkSystem\WeChat\NiceEdu\APP\Home\View\Index" />
       <recent name="C:\Users\Administrator\PhpstormProjects\StuWorkSystem\Data\database" />
       <recent name="C:\Users\Sunwu\PhpstormProjects\StuWorkSystem\Data\database" />
-      <recent name="C:\Users\Sunwu\PhpstormProjects\StuWorkSystem\APP\Home\Model" />
-      <recent name="C:\Users\Sunwu\PhpstormProjects\StuWorkSystem\APP\Home\View\Team" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -308,11 +286,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.addItem.html">
+  <component name="RunManager" selected="JavaScript Debug.information.html">
+    <configuration name="addItem.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CommissarySystem/addItem.html" />
+    <configuration name="addItem.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CommissarySystem/Data/view/addItem.html" />
     <configuration name="addItem.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/StuWorkSystem/addItem.html" />
+    <configuration name="information.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CommissarySystem/Data/view/information.html" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.addItem.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.addItem.html (1)" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.addItem.html (2)" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.information.html" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.addItem.html" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.information.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.addItem.html (2)" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.addItem.html (1)" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.addItem.html" />
       </list>
     </recent_temporary>
   </component>
@@ -320,7 +310,7 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration" myUseAcceleration="nothing" cleanupOnStartRun="true">
-    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <configuration>C:\Users\Sunwu\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
   </component>
   <component name="TaskManager">
@@ -339,36 +329,37 @@
       <workItem from="1504915373911" duration="14912000" />
       <workItem from="1505387037993" duration="1889000" />
       <workItem from="1505389697701" duration="6725000" />
+      <workItem from="1505622306625" duration="2434000" />
+      <workItem from="1505660812937" duration="2182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55352000" />
+    <option name="totallyTimeSpent" value="59968000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="753" extended-state="6" />
-    <editor active="true" />
+    <frame x="-11" y="-11" width="1942" height="1056" extended-state="6" />
     <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.043736503" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3412527" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40939596" sideWeight="0.50832075" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40939596" sideWeight="0.49167928" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8031146" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12632374" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.038590603" sideWeight="0.49394855" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21785174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40826246" sideWeight="0.50832075" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1709531" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40826246" sideWeight="0.49167928" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8031146" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.038590603" sideWeight="0.49394855" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5303327" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -415,11 +406,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/APP/Home/View/UpWork/index.html</url>
-          <line>169</line>
+          <line>181</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/APP/Home/View/UpWork/index.html</url>
-          <line>837</line>
+          <line>849</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -433,34 +424,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/APP/Admin/View/UpWorkConsole/showConsole.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Plugins/Tools/File/FileObject.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1863">
-          <caret line="81" column="28" lean-forward="false" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Plugins/Tools/File/FileCompress.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="52" column="41" lean-forward="false" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Admin/Controller/UpWorkConsoleController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="110" column="39" lean-forward="false" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Home/View/Index/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="729">
@@ -490,7 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
           <caret line="132" column="3" lean-forward="true" selection-start-line="132" selection-start-column="3" selection-end-line="132" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -498,7 +460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="299" column="20" lean-forward="false" selection-start-line="299" selection-start-column="20" selection-end-line="299" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -506,7 +467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="783">
           <caret line="276" column="5" lean-forward="true" selection-start-line="267" selection-start-column="4" selection-end-line="276" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -524,7 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/xampp/htdocs/addItem/addItem.html" />
     <entry file="das://table:/7175340e/70251105-35ae-4756-9a62-513d77144d0c/blog.blog_team_user" />
     <entry file="das://table:/7175340e/70251105-35ae-4756-9a62-513d77144d0c/blog.blog_team_category" />
     <entry file="das://table:/7175340e/70251105-35ae-4756-9a62-513d77144d0c/blog.blog_team" />
@@ -541,7 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2552">
           <caret line="203" column="1" lean-forward="false" selection-start-line="203" selection-start-column="1" selection-end-line="203" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -570,69 +528,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://src:table:/1b6d3e0b/70251105-35ae-4756-9a62-513d77144d0c/blog.blog_upwork">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://src:table:/1b6d3e0b/70251105-35ae-4756-9a62-513d77144d0c/blog.blog_team_user">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://src:table:/1b6d3e0b/70251105-35ae-4756-9a62-513d77144d0c/blog.blog_user">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://src:table:/1b6d3e0b/70251105-35ae-4756-9a62-513d77144d0c/blog.blog_upwork_console">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://src:table:/1b6d3e0b/70251105-35ae-4756-9a62-513d77144d0c/blog.blog_upwork" />
+    <entry file="das://src:table:/1b6d3e0b/70251105-35ae-4756-9a62-513d77144d0c/blog.blog_team_user" />
+    <entry file="das://src:table:/1b6d3e0b/70251105-35ae-4756-9a62-513d77144d0c/blog.blog_user" />
+    <entry file="das://src:table:/1b6d3e0b/70251105-35ae-4756-9a62-513d77144d0c/blog.blog_upwork_console" />
     <entry file="file://$PROJECT_DIR$/Data/database/blog_v1.4.3.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="45" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="das://src:table:/1b6d3e0b/70251105-35ae-4756-9a62-513d77144d0c/blog.blog_team_category">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://src:table:/1b6d3e0b/70251105-35ae-4756-9a62-513d77144d0c/blog.blog_team">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://src:table:/1b6d3e0b/70251105-35ae-4756-9a62-513d77144d0c/blog.blog_team_category" />
+    <entry file="das://src:table:/1b6d3e0b/70251105-35ae-4756-9a62-513d77144d0c/blog.blog_team" />
     <entry file="file://$PROJECT_DIR$/WeChat/NiceEdu/APP/Home/Conf/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Home/View/UpWork/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -640,7 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -648,30 +559,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="das://src:table:/1b6d3e0b/70251105-35ae-4756-9a62-513d77144d0c/blog.nice_signup">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/1b6d3e0b/70251105-35ae-4756-9a62-513d77144d0c/blog.nice_signup">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://src:table:/1b6d3e0b/70251105-35ae-4756-9a62-513d77144d0c/blog.nice_signup" />
+    <entry file="das://table:/1b6d3e0b/70251105-35ae-4756-9a62-513d77144d0c/blog.nice_signup" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="794" column="19" lean-forward="true" selection-start-line="794" selection-start-column="19" selection-end-line="794" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -679,9 +575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding>
-            <element signature="e#617#1202#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -689,10 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1074">
           <caret line="141" column="7" lean-forward="false" selection-start-line="141" selection-start-column="7" selection-end-line="141" selection-end-column="7" />
-          <folding>
-            <marker date="1505386875812" expanded="false" signature="2227:2237" ph="..." />
-            <marker date="1505386875812" expanded="false" signature="2300:2311" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -700,7 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -708,23 +596,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6cea4667-854a-48f3-af64-a0a0f2fbaa77/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6cea4667-854a-48f3-af64-a0a0f2fbaa77/console.sql" />
     <entry file="file://$PROJECT_DIR$/APP/Common/Conf/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
           <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -732,10 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="e#105#161#0#PHP" expanded="false" />
-            <element signature="e#167#188#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -743,15 +618,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-193">
           <caret line="84" column="42" lean-forward="false" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WeChat/NiceEdu/APP/Home/View/Index/signUp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2990">
+        <state relative-caret-position="0">
           <caret line="130" column="17" lean-forward="false" selection-start-line="130" selection-start-column="17" selection-end-line="130" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -759,20 +631,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Data/view/bootstrap/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/view/information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/view/addItem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="148" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/addItem/addItem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WeChat/NiceEdu/APP/Home/View/Index/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="53" column="46" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="46" />
+        <state relative-caret-position="-84">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Home/View/UpWork/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="147" column="41" lean-forward="true" selection-start-line="147" selection-start-column="34" selection-end-line="147" selection-end-column="41" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="69" selection-end-column="14" />
+        <state relative-caret-position="591">
+          <caret line="76" column="2" lean-forward="true" selection-start-line="76" selection-start-column="2" selection-end-line="76" selection-end-column="23" />
           <folding />
         </state>
       </provider>

@@ -124,6 +124,18 @@
         .drop_down_add {
             margin-top: 10px;
         }
+
+        body{
+            background: url("./bg.jpg");
+            background-repeat:no-repeat ;
+            background-size:100% 100%;
+            background-attachment: fixed;"
+        }
+        .teamer{
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -133,7 +145,7 @@
     <!--头部 用户处理部分-->
     <div class="head_container">
         <!--导航-->
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-default">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                         data-target="#inverseNavbar1">
@@ -147,8 +159,8 @@
             <div class="collapse navbar-collapse" id="inverseNavbar1">
                 <ul class="nav navbar-nav">
                     <li><a href='javascript:void(0)' onclick="show_upwork()">交作业</a></li>
-                    <li><a href="javascript:void(0)" onclick="show_vipparse()">VIP解析</a></li>
                     <li><a href="javascript:void(0)" onclick="show_team()">分组系统</a></li>
+                    <li><a href="javascript:void(0)" onclick="show_vipparse()">VIP解析</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
@@ -1099,9 +1111,9 @@
             <div class="panel-body">
                 <div class="mydiv" style='background:white;padding: 20px 0px 0px;min-width: 800px;'>
                     <div class="row">
-                        <div class="col-md-12"></div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-2">
+                        <div class="col-xs-12"></div>
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-2">
                             <select id="vip_api" name="itype" class="form-control">
                                 <option selected value="http://v.72du.com/api/?url=">通用接口</option>
                                 <option value="http://api.baiyug.cn/vip/index.php?url=">接口1</option>
@@ -1109,7 +1121,7 @@
                                 <option value="http://000o.cc/jx/ty.php?url=">接口3</option>
                             </select>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-xs-4">
                             <div class="input-group">
                                 <div class="input-group-addon">视频地址:</div>
                                 <input id="video_api" class="form-control" placeholder="复制视频地址开始播放" type="text"
@@ -1117,7 +1129,7 @@
                                        value="{$inputUrl}">
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-xs-2">
                             <!--<input type="submit" value="开始播放 " class="btn btn-primary">-->
                             <button onclick="play()" class="btn btn-primary">开始播放</button>
                             <script>
@@ -1130,7 +1142,7 @@
                             </script>
                         </div>
 
-                        <div class="col-md-2">
+                        <div class="col-xs-2">
                             <a class='btn btn-danger'
                                href="http://v.youku.com/v_show/id_XMjcxMzY1ODY2MA==.html?spm=a2hzp.8253869.0.0&from=y1.7-2">教程视频</a>
                         </div>
