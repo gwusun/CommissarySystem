@@ -1,0 +1,51 @@
+[ 2017-08-25T11:01:13+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=11
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0003s ]
+SQL: update blog_user set user_download_count=85 WHERE user_stu_num='20150107030131' [ RunTime:0.0136s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-25T11:02:19+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0008s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2017-08-25T11:02:19+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0004s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-08-25T11:03:40+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0006s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-08-25T11:03:48+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0005s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+

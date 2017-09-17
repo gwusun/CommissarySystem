@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+    <title>index</title>
+    <link rel="stylesheet" href="{$Think.config.BOOTSTRAP_CSS_URL}bootstrap.css">
+    <script src="{$Think.config.BOOTSTRAP_JS_URL}jquery.min.js"></script>
+    <script src="{$Think.config.BOOTSTRAP_JS_URL}bootstrap.js"></script>
+    <script src="{$Think.config.HOME_JS_URL}sw.js"></script>
+    <style>
+        .my-title {
+            float: left;
+        }
+
+        .s-head {
+            font-size: 88px;
+            padding: 10px;
+        }
+
+        .user-info {
+            padding-left: 30px;
+            margin: 10px;
+            font-size: 15px;
+        }
+
+        .work-info {
+            padding-left: 30px;
+            margin: 10px;
+            font-size: 21px;
+        }
+
+        .un-upload-span {
+            display: block;
+            padding: 5px;
+            margin: 5px 10px;
+            float: left;
+        }
+
+        .un-upload-div, .uploaded-div {
+            border-top: none;
+            min-width: 888px;
+        }
+
+        .work-nav {
+            width: 100%;
+            min-width: 888px;
+            float: left;
+            font-size: 18px;
+        }
+
+        .work-nav div {
+            float: right;
+        }
+
+        .open-file-btn {
+            font-size: 44px;
+        }
+
+        .file_info {
+            padding-left: 20px;
+            font-size: 20px;
+        }
+
+        #upFileBox {
+            margin-top: 88px;
+        }
+
+        #login_verify {
+            margin-bottom: 0px;
+        }
+
+        .user-info-div {
+            min-width: 888px;
+        }
+
+        .vip_parse_box {
+            min-width: 888px;
+        }
+
+        #footer {
+            clear: both;
+            font: 12px/24px Arial !important;
+            margin: 0px auto;
+            width: 100%;
+            color: #333;
+            text-align: center;
+            padding-top: 0px;
+            text-decoration: none;
+            padding-bottom: 60px;
+            background: #fff;
+        }
+
+        #footer .a2 {
+            min-width: 1000px;
+            margin: 0px auto;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #666;
+            font: 12px/24px Arial !important;
+            word-spacing: 6px;
+            padding-top: 30px;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="container" style="min-width: 918px;">
+    <!--导航/登陆-->
+    <!--头部-->
+    <div class="head_container">
+        <!--导航模块-->
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#inverseNavbar1">
+                    <span class="sr-only"></span><span class="icon-bar"></span>
+                    <span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="javascript:void(0)">
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="inverseNavbar1">
+                <ul class="nav navbar-nav">
+                    <li><a href='javascript:void(0)' onclick="show_upwork()">交作业</a></li>
+                    <li><a href="javascript:void(0)" onclick="show_vipparse()">VIP解析</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <if condition="session('user_name') neq ''">
+                        <!--用户已登陆-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                               aria-expanded="false">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>{$Think.session.user_name}<span
+                                    class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" data-toggle="modal" data-target="#modify">修改个人信息</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#modify-pwd">修改密码</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#login">切换用户</a></li>
+                                <li><a href="{:U('User/logout')}">注销</a></li>
+                            </ul>
+                        </li>
+                        <else />
+                        <!--没有登陆-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                               aria-expanded="false">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>个人中心<span
+                                    class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="#" data-toggle="modal" data-target="#login">登陆</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#register">注册</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#find-pwd">忘记密码</a></li>
+                            </ul>
+                        </li>
+                    </if>
+
+
+                </ul>
+            </div>
+
+            <script>
+                /*注册表单获取*/
+                function getRegisterPage() {
+                    $.ajax({
+                        url: "{:U('User/register')}",
+//                        data: {"pics_id": pics_id},
+                        //dataType:,
+                        //type:,
+                        success: function (msg) {
+                            alert(msg);
+                        }
+                    });
+                }
+            </script>
+        </nav>
+
+        <!--登陆登陆处理模块-->
+        <div class="login-div">
+            <form action="{:U('User/login')}" method="post">
+                <div id="login" class="modal fade   " tabindex="-1" role="dialog">
+                    <div class="modal-dialog    " role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">用户登陆</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div id="login_username">
+                                    <!--用户名-->
+                                    <label class="sr-only" for="login_username_input">Input with help text</label>
+                                    <input name="login_username" placeholder="学号/邮箱" type="text"
+                                           id="login_username_input" class="form-control"
+                                           aria-describedby="login_usernameHelpBlock">
+                                    <span id="login_usernameHelpBlock" class="help-block">注册时所用的学号 邮箱</span>
+                                </div>
+                                <div id="login_pwd">
+                                    <!--密码-->
+                                    <label class="sr-only" for="login_pwd_input">Input with help text</label>
+                                    <input name="login_pwd" placeholder="密码" type="password" id="login_pwd_input"
+                                           class="form-control"
+                                           aria-describedby="login_pwdhelpBlock">
+                                    <span id="login_pwdhelpBlock" class="help-block">注册时所用的密码</span>
+                                </div>
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                <input type="submit" class="btn btn-primary" value="登陆">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!--登陆模块处理-->
+            <script>
+                function change_stat() {
+                    inputStateSuccess("login_username");
+                    inputStateError('login_pwd', "用户名或者密码错误");
+                    verifyStateError('login_verify');
+
+                }
+
+
+            </script>
+        </div>
+
+        <!--注册处理模块-->
+        <div class="register-div">
+            <form action="{:U('User/register')}" method="post">
+                <input type="hidden" name="type" value="register">
+                <div id="register" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">用户注册</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div id="register-email">
+                                    <!--邮箱-->
+                                    <label class="sr-only" for="registerUsername">Input with help text</label>
+                                    <input onblur="register_check_email(this);" name="register_email" placeholder="邮箱"
+                                           type="text" id="registerUsername" class="form-control"
+                                           aria-describedby="uregisterUsernameHelpBlock">
+                                    <span id="registerUsernameHelpBlock" class="help-block">用于激活账号/找回密码 </span>
+                                </div>
+                                <div id="register-stu_num">
+                                    <!--学号-->
+                                    <label class="sr-only" for="registerNo">Input with help text</label>
+                                    <input onblur="register_check_stu_num(this);" name="register_stu_no"
+                                           placeholder="学号" type="text" id="registerNo" class="form-control"
+                                           aria-describedby="registerNoHelpBlock">
+                                    <span id="registerNoHelpBlock" class="help-block">用于作业自动命名  (如果填错或不填,提交作业将出错)</span>
+                                </div>
+                                <div id="register-name">
+                                    <!--姓名-->
+                                    <label class="sr-only" for="registerName">Input with help text</label>
+                                    <input onblur="register_check_name(this)" name="register_name" placeholder="姓名"
+                                           type="text" id="registerName" class="form-control"
+                                           aria-describedby="registerNameHelpBlock">
+                                    <span id="registerNameHelpBlock"
+                                          class="help-block">用于作业自动命名  (如果填错或不填,提交作业将出错)</span>
+                                </div>
+                                <div id="register-pwd1">
+                                    <!--密码-->
+                                    <label class="sr-only" for="registerPwd1">Input with help text</label>
+                                    <input name="register_pwd1" placeholder="密码" type="password" id="registerPwd1"
+                                           class="form-control"
+                                           aria-describedby="registerPwd1HelpBlock">
+                                    <span id="registerPwd1HelpBlock" class="help-block"> </span>
+                                </div>
+                                <div id="register-pwd2">
+                                    <!--确认密码-->
+                                    <label class="sr-only" for="registerPwd2">Input with help text</label>
+                                    <input onblur="register_check_pwd()" name="register_pwd2" placeholder="确认密码"
+                                           type="password" id="registerPwd2" class="form-control"
+                                           aria-describedby="registerPwd2HelpBlock">
+                                    <span id="registerPwd2HelpBlock" class="help-block"></span>
+                                </div>
+
+                                <!--验证码处理-->
+                                <table>
+                                    <tr>
+                                        <td width="20%"><img height="35px" src="{:U('User/verifyImg')}" alt="验证码,点击更换">
+                                        </td>
+                                        <td>
+                                            <div id="register_verify">
+                                                <label class="sr-only" for="register_verify_input">Input with help
+                                                    text</label>
+                                                <input onkeyup="register_check_verify(this)" name="register_verify"
+                                                       placeholder="验证码" type="text" id="register_verify_input"
+                                                       class="form-control" aria-describedby="register_verifyhelpBlock">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <input type="submit" class="btn btn-primary">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!--表单提交ajax处理-->
+            <script>
+
+                /*注册检查邮箱*/
+                function register_check_email(obj) {
+                    var id = $(obj).parent().attr('id');
+                    $(obj).focus(function () {
+                        inputReset(id);
+                    });
+                    var email = $(obj).val();
+                    $.ajax({
+                        url: "{:U('User/registerCheckEmail')}",
+                        data: {"email": email},
+                        dataType: 'json',
+                        type: 'get',
+                        success: function (msg) {
+                            if (msg.state == '1') {
+                                /*邮箱可用*/
+                                inputStateSuccess("register-email");
+                            } else {
+                                /*邮箱不可用*/
+                                inputStateError('register-email', msg.stateMsg)
+                            }
+                        }
+                    });
+                }
+
+                /*注册检查学号*/
+                function register_check_stu_num(obj) {
+
+                    var email = $(obj).val();
+                    var id = $(obj).parent().attr('id');
+                    $(obj).focus(function () {
+                        inputReset(id);
+                    });
+                    $.ajax({
+                        url: "{:U('User/registerCheckStuNum')}",
+                        data: {"email": email},
+                        dataType: 'json',
+                        type: 'get',
+                        success: function (msg) {
+                            if (msg.state == '1') {
+                                /*可用*/
+                                inputStateSuccess(id);
+                            } else {
+                                /*不可用*/
+                                inputStateError(id, msg.stateMsg)
+                            }
+                        }
+                    });
+                }
+
+                /*检查姓名*/
+                function register_check_name(obj) {
+                    var id = $(obj).parent().attr('id');
+                    $(obj).focus(function () {
+                        inputReset(id);
+                    });
+
+                    var name = $(obj).val();
+                    if (name.length >= 2) {
+                        /*可用*/
+                        inputStateSuccess(id);
+                    } else {
+                        /*不可用*/
+                        inputStateError(id, "姓名错误")
+                    }
+
+                }
+
+                function register_check_pwd() {
+                    var pwd1 = $("input[name='register_pwd1']").val();
+                    var pwd2 = $("input[name='register_pwd2']").val();
+                    if (pwd1 == pwd2) {
+                        inputStateSuccess("register-pwd1");
+                        inputStateSuccess("register-pwd2");
+
+                    } else {
+                        inputStateError("register-pwd1", "两次输入的密码不一致");
+                        inputStateError("register-pwd2", "两次输入的密码不一致");
+                    }
+                }
+
+
+                /*注册检查验证码*/
+                function register_check_verify(obj) {
+                    var id = $(obj).parent().attr('id');
+                    var val = $(obj).val();
+                    if (val.length == 4) {
+                        verifyReset(id);
+                        $.ajax({
+                            url: "{:U('User/registerCheckVerify')}",
+                            data: {"verify": val},
+                            dataType: 'json',
+                            type: 'get',
+                            success: function (msg) {
+                                if (msg.state == '1') {
+                                    /*可用*/
+                                    verifyStateSuccess(id);
+                                } else {
+                                    /*不可用*/
+                                    verifyStateError(id);
+                                }
+                            }
+                        });
+                    }
+                }
+            </script>
+        </div>
+
+        <!--信息修改理模块-->
+        <div class="modify-div">
+            <form action="__SELF__" method="post">
+                <input type="hidden" name="type" value="modify_userinfo">
+                <div id="modify" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">用户信息修改</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div id="modify-username">
+                                    <!--用户名-->
+                                    <label class="" for="modifyUsername">邮箱:</label>
+                                    <input name="email" value="222@qq.com" disabled placeholder="邮箱" type="text"
+                                           id="modifyUsername" class="form-control"
+                                           aria-describedby="umodifyUsernameHelpBlock">
+                                    <span class="sr-only" id="modifyUsernameHelpBlock"
+                                          class="help-block">用于激活账号/找回密码 </span>
+                                </div>
+                                <div id="modify-No">
+                                    <!--学号-->
+                                    <label for="modifyNo">学号:</label>
+                                    <input name="stu_no" placeholder="学号" type="text" id="modifyNo" class="form-control"
+                                           aria-describedby="modifyNoHelpBlock">
+                                    <span class="sr-only" id="modifyNoHelpBlock" class="help-block">用于作业自动命名  (如果填错或不填,提交作业将出错)</span>
+                                </div>
+                                <div id="modify-name">
+                                    <!--姓名-->
+                                    <label class="" for="modifyName">姓名:</label>
+                                    <input name="name" placeholder="姓名" type="text" id="modifyName" class="form-control"
+                                           aria-describedby="modifyNameHelpBlock">
+                                    <span class="sr-only" id="modifyNameHelpBlock" class="help-block">用于作业自动命名  (如果填错或不填,提交作业将出错)</span>
+                                </div>
+
+                                <br>
+
+                                <!--验证码处理-->
+                                <table>
+                                    <tr>
+                                        <td width="20%"><img height="35px" src="{$Think.config.HOME_IMG_URL}verify.png"
+                                                             alt="验证码,点击更换"></td>
+                                        <td>
+                                            <div id="verify">
+                                                <label class="sr-only" for="modify_verify_input">Input with help
+                                                    text</label>
+                                                <input name="verify" placeholder="验证码" type="text"
+                                                       id="modify_verify_input"
+                                                       class="form-control" aria-describedby="modify_verifyhelpBlock">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <input type="submit" class="btn btn-primary">
+                                <button onclick="change_stat()" type="button" class="btn btn-primary">change</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!--密码修改处理模块-->
+        <div class="modify-pwd-div">
+            <form action="__SELF__" method="post">
+                <input type="hidden" name="type" value="modify_pwd">
+                <div id="modify-pwd" class="modal fade   " tabindex="-1" role="dialog">
+                    <div class="modal-dialog    " role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">密码修改</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div id="modify_pwd_username">
+                                    <!--旧密码-->
+                                    <label class="sr-only" for="modify_pwd_username_input">Input with help text</label>
+                                    <input name="old_pwd" placeholder="旧密码" type="text" id="modify_pwd_username_input"
+                                           class="form-control"
+                                           aria-describedby="modify_pwd_usernameHelpBlock">
+                                    <span id="modify_pwd_usernameHelpBlock"
+                                          class="help-block sr-only">注册时所用的学号 邮箱</span>
+                                </div>
+                                <br>
+                                <div id="modify_pwd_pwd">
+                                    <!--密码-->
+                                    <label class="sr-only" for="modify_pwd_pwd_input">Input with help text</label>
+                                    <input name="pwd1" placeholder="新密码" type="text" id="modify_pwd_pwd_input"
+                                           class="form-control"
+                                           aria-describedby="modify_pwd_pwdhelpBlock">
+                                    <span id="modify_pwd_pwdhelpBlock" class="help-block sr-only">注册时所用的密码</span>
+                                </div>
+                                <br>
+                                <div id="modify_pwd_pwd1">
+                                    <!--密码-->
+                                    <label class="sr-only" for="modify_pwd_pwd_input1">Input with help text</label>
+                                    <input name="pwd2" placeholder="确认密码" type="text" id="modify_pwd_pwd_input1"
+                                           class="form-control"
+                                           aria-describedby="modify_pwd_pwdhelpBlock">
+                                    <span id="modify_pwd_pwdhelpBlock1" class="help-block sr-only">注册时所用的密码</span>
+                                </div>
+                                <br>
+                                <!--验证码处理-->
+                                <table>
+                                    <tr>
+                                        <td width="20%"><img height="35px" src="{$Think.config.HOME_IMG_URL}verify.png"
+                                                             alt="验证码,点击更换"></td>
+                                        <td>
+                                            <div id="modify_pwd_verify">
+                                                <label class="sr-only" for="modify_pwd_verify_input">Input with help
+                                                    text</label>
+                                                <input name="verify" placeholder="验证码" type="text"
+                                                       id="modify_pwd_verify_input"
+                                                       class="form-control"
+                                                       aria-describedby="modify_pwd_verifyhelpBlock">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <input type="submit" class="btn btn-primary">登陆</input>
+                                <button onclick="change_stat()" type="button" class="btn btn-primary">change</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!--登陆模块处理-->
+            <script>
+                function change_stat() {
+                    inputStateSuccess("modify_pwd_username");
+                    inputStateError('modify_pwd_pwd', "用户名或者密码错误");
+                    verifyStateError('modify_pwd_verify');
+
+                }
+
+
+            </script>
+        </div>
+
+        <!--密码找回处理模块-->
+        <div class="find-pwd-div">
+            <form action="__SELF__" method="post">
+                <input type="hidden" name="type" value="find_pwd">
+                <div id="find-pwd" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">密码找回</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div id="find-pwd-username">
+                                    <!--邮箱-->
+                                    <label class="sr-only" for="find-pwdUsername">Input with help text</label>
+                                    <input name="email" placeholder="邮箱" type="text" id="find-pwdUsername"
+                                           class="form-control"
+                                           aria-describedby="ufind-pwdUsernameHelpBlock">
+                                    <span id="find-pwdUsernameHelpBlock" class="help-block">注册时所用的邮箱</span>
+                                </div>
+                                <div id="find-pwd-No">
+                                    <!--学号-->
+                                    <label class="sr-only" for="find-pwdNo">注册时的学号</label>
+                                    <input name="stu_no" placeholder="学号" type="text" id="find-pwdNo"
+                                           class="form-control"
+                                           aria-describedby="find-pwdNoHelpBlock">
+                                    <span id="find-pwdNoHelpBlock" class="help-block">注册时的学号</span>
+                                </div>
+                                <div id="find-pwd-pwd1">
+                                    <!--密码-->
+                                    <label class="sr-only" for="find-pwdPwd1">Input with help text</label>
+                                    <input name="pwd1" placeholder="新密码" type="text" id="find-pwdPwd1"
+                                           class="form-control"
+                                           aria-describedby="find-pwdPwd1HelpBlock">
+                                    <span id="find-pwdPwd1HelpBlock" class="help-block">新密码</span>
+                                </div>
+                                <div id="find-pwd-Pwd2">
+                                    <!--确认密码-->
+                                    <label class="sr-only" for="find-pwdPwd2">Input with help text</label>
+                                    <input name="pwd2" placeholder="确认密码" type="text" id="find-pwdPwd2"
+                                           class="form-control"
+                                           aria-describedby="find-pwdPwd2HelpBlock">
+                                    <span id="find-pwdPwd2HelpBlock" class="help-block">确认密码</span>
+                                </div>
+
+                                <!--验证码处理-->
+                                <table>
+                                    <tr>
+                                        <td width="20%"><img height="35px" src="{$Think.config.HOME_IMG_URL}verify.png"
+                                                             alt="验证码,点击更换"></td>
+                                        <td>
+                                            <div id="find-pwd_verify">
+                                                <label class="sr-only" for="find-pwd_verify_input">Input with help
+                                                    text</label>
+                                                <input name="verify" placeholder="验证码" type="text"
+                                                       id="find-pwd_verify_input"
+                                                       class="form-control" aria-describedby="find-pwd_verifyhelpBlock">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <input type="submit" class="btn btn-primary">
+                                <button onclick="change_stat()" type="button" class="btn btn-primary">change</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!--作业提交部分-->
+    <div class="upwork_container">
+        <!--body部分-->
+        <!--用户信息框-->
+        <div class="panel panel-default user-info-div">
+            <div class="panel-body">
+                <div class="my-title"><span class="glyphicon glyphicon-user s-head" aria-hidden="true"></span></div>
+                <div class="my-title">
+                    <div class="user-info">姓名:{$Think.session.user_name}</div>
+                    <div class="user-info">学号:{$Think.session.user_stu_num}</div>
+                    <div class="user-info">邮箱:{$Think.session.user_email}</div>
+                </div>
+                <div class="my-title">
+                    <div class="user-info">已交作业分数:2份</div>
+                    <div class="user-info">提交作业格式:15级软件工程孙武31的数据库作业5</div>
+
+                </div>
+                <div class="my-title"></div>
+            </div>
+        </div>
+
+        <!--作业信息框-->
+        <div class="panel panel-default user-info-div">
+            <div class="panel-body">
+                <div class="my-title"><span class="glyphicon glyphicon-th-list s-head" aria-hidden="true"></span></div>
+                <div class="my-title">
+                    <div class="work-info">作业信息:{$workConsoleInfo.con_course}{$workConsoleInfo.con_course_type}</div>
+                    <div class="work-info">作业要求:{$workConsoleInfo.con_request}</div>
+                </div>
+            </div>
+        </div>
+
+        <!--切换框-->
+        <ul class="nav nav-tabs work-nav">
+            <li role="presentation" class="un-upload-li active" onclick="un_upload_div_click()"><a href="#">未交作业</a>
+            </li>
+            <li role="presentation" class="uploaded-li" onclick="uploaded_div_click()"><a href="#">已交作业</a></li>
+            <div><img data-toggle="modal" data-target=".bs-example-modal-lg" height="46px"
+                      src="{$Think.config.HOME_IMG_URL}up_homework.png"
+                      alt=""></div>
+        </ul>
+
+
+        <!--处理已交作业和未交作业框-->
+        <script>
+            /*处理已交作业和未交作业框*/
+            $(function () {
+                $('.un-upload-div').show();
+                $('.uploaded-div').hide();
+
+            });
+
+            function un_upload_div_click() {
+                $('.un-upload-div').show();
+                $('.un-upload-li').addClass('active');
+                $('.uploaded-div').hide();
+                $('.uploaded-li').removeClass('active');
+            }
+
+            function uploaded_div_click() {
+                $('.un-upload-div').hide();
+                $('.un-upload-li').removeClass('active');
+                $('.uploaded-div').show();
+                $('.uploaded-li').addClass('active');
+
+            }
+        </script>
+
+        <!--未交作业-->
+        <div class="panel panel-default un-upload-div">
+            <div class="panel-body">
+                <div style="height: 40px"></div>
+                <span class="un-upload-span">孙武20150107030131</span>
+                <span class="un-upload-span">孙武20150107030131</span>
+                <span class="un-upload-span">孙武20150107030131</span>
+                <span class="un-upload-span">孙武20150107030131</span>
+                <span class="un-upload-span">孙武20150107030131</span>
+                <span class="un-upload-span">孙武20150107030131</span>
+                <span class="un-upload-span">孙武20150107030131</span>
+                <span class="un-upload-span">孙武20150107030131</span>
+            </div>
+        </div>
+
+
+        <!--已交作业-->
+        <div class="panel panel-default uploaded-div">
+            <div class="panel-body">
+                <div style="height: 70px"></div>
+                <table class="table">
+                    <tr class="text-center">
+                        <td>序号</td>
+                        <td>用户</td>
+                        <td>作业名称</td>
+                        <td>上传日期</td>
+                        <td>操作</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>01</td>
+                        <td>孙武</td>
+                        <td>2015010703013115级软件工程孙武31的数据库作业5</td>
+                        <td>2015年2月30日</td>
+                        <td><a href="#"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>下载</a></td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>01</td>
+                        <td>孙武</td>
+                        <td>2015010703013115级软件工程孙武31的数据库作业5</td>
+                        <td>2015年2月30日</td>
+                        <td><a href="#"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>下载</a></td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>01</td>
+                        <td>孙武</td>
+                        <td>2015010703013115级软件工程孙武31的数据库作业5</td>
+                        <td>2015年2月30日</td>
+                        <td><a href="#"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>下载</a></td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>01</td>
+                        <td>孙武</td>
+                        <td>2015010703013115级软件工程孙武31的数据库作业5</td>
+                        <td>2015年2月30日</td>
+                        <td><a href="#"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>下载</a></td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>01</td>
+                        <td>孙武</td>
+                        <td>2015010703013115级软件工程孙武31的数据库作业5</td>
+                        <td>2015年2月30日</td>
+                        <td><a href="#"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>下载</a></td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>01</td>
+                        <td>孙武</td>
+                        <td>2015010703013115级软件工程孙武31的数据库作业5</td>
+                        <td>2015年2月30日</td>
+                        <td><a href="#"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>下载</a></td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>01</td>
+                        <td>孙武</td>
+                        <td>2015010703013115级软件工程孙武31的数据库作业5</td>
+                        <td>2015年2月30日</td>
+                        <td><a href="#"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>下载</a></td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>01</td>
+                        <td>孙武</td>
+                        <td>2015010703013115级软件工程孙武31的数据库作业5</td>
+                        <td>2015年2月30日</td>
+                        <td><a href="#"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>下载</a></td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>01</td>
+                        <td>孙武</td>
+                        <td>2015010703013115级软件工程孙武31的数据库作业5</td>
+                        <td>2015年2月30日</td>
+                        <td><a href="#"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>下载</a></td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>01</td>
+                        <td>孙武</td>
+                        <td>2015010703013115级软件工程孙武31的数据库作业5</td>
+                        <td>2015年2月30日</td>
+                        <td><a href="#"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>下载</a></td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>01</td>
+                        <td>孙武</td>
+                        <td>2015010703013115级软件工程孙武31的数据库作业5</td>
+                        <td>2015年2月30日</td>
+                        <td><a href="#"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>下载</a></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+
+        <!--提交作业框-->
+        <div id="upFileBox" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog"
+             aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="gridSystemModalLabel">选择作业</h4>
+                    </div>
+                    <div class="modal-body">
+                        <!--文件筐-->
+                        <div class="file_box">
+                        <span onclick="open_file()" class="glyphicon glyphicon-folder-open open-file-btn"
+                              aria-hidden="true"></span>
+                            <span class="file_info"></span>
+                        </div>
+
+                        <!--进度条-->
+                        <div class="process_box">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                     aria-valuemax="100" style="width: 20%;">
+                                    20%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" id="submit_box">
+                        <form action="{:U('UpWork/fileSave')}" method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="type" value="file">
+                            <input id="upFile" type="file" name="upFile" style="display: none">
+                            <input id="submit_btn" onclick="return window.confirm('你已经选择好文件,确认提交吗?');" type="submit"
+                                   class="btn btn-primary" style="width: 100%">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--上传文件处理-->
+        <script>
+            /*上传文件处理*/
+            function open_file() {
+                $('#upFile').click();
+            }
+
+            $(function () {
+                $('#upFile').change(function () {
+                    console.log($('#upFile').val());
+                    $('.file_info').html($('#upFile').val());
+                });
+
+            });
+
+            /*进度条处理*/
+            $(function () {
+                $('.process_box').hide();
+                $('#submit_btn').click(function () {
+                    $(".file_box").hide();
+                    $('.process_box').show();
+                    $("#gridSystemModalLabel").html('文件上传进度');
+                    $("#submit_box").hide();
+                });
+            });
+        </script>
+    </div>
+
+    <!--VIP解析部分-->
+    <div class="vip_parse_container">
+        <div class="panel panel-default vip_parse_box">
+            <div class="panel-body">
+                <div class="mydiv" style='background: white;padding: 20px 5px;'>
+                    <div class="row">
+                        <div class="col-xs-12"><br><br><br><br><br>
+                            <hr>
+                        </div>
+                        <form action="/index.php/Home/VipParse/home" method="post">
+                            <input type="hidden" name="type" value="vip_parse">
+                            <div class="col-xs-12"><br></div>
+                            <div class="col-xs-1"></div>
+                            <div class="col-xs-2">
+                                <select name="itype" class="form-control">
+                                    <option value="1">-请选择接口-</option>
+                                    <option value="1">爱奇艺</option>
+                                    <option value="2">接口1</option>
+                                    <option value="3">接口2</option>
+                                    <option value="4">接口3</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="input-group">
+                                    <div class="input-group-addon">视频地址:</div>
+                                    <input class="form-control" placeholder="复制视频地址开始播放" type="text" name="inputUrl"
+                                           value="">
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="submit" value="开始播放 " class="btn btn-primary"></div>
+                            <div class="col-xs-2">
+                                <a class='btn btn-danger'
+                                   href="http://v.youku.com/v_show/id_XMjcxMzY1ODY2MA==.html?spm=a2hzp.8253869.0.0&from=y1.7-2">使用教程</a>
+                            </div>
+                        </form>
+                        <div class="col-xs-12 text-center"><br>
+                            <hr>
+                            <br>
+                            <h3>使用教程</h3><br><h5>打开爱奇艺(或者其他网站) -> 点击付费的视频 -> 进入视频播放页面 -> 复制地址栏地址 -> 粘贴到本页视频地址处 ->
+                                点击开始播放</h5><br>
+                        </div>
+                        <div class="col-xs-12"><br><br>
+                            <hr>
+                        </div>
+
+
+                        <!--row结束-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--尾部-->
+    <div class="footer_container">
+        <br>
+        <div id="footer">
+            <div class="a2">
+                <a href="" target='_blank'>系统后台</a> |
+                <a href="" target='_blank'>系统后台</a> |
+                <a href="" target='_blank'>系统后台</a> |
+                <a href="" target='_blank'>系统后台</a> |
+                <a href="" target='_blank'>系统后台</a> |
+                <a href="" target='_blank'>系统后台</a> |
+                <a href="" target='_blank'>系统后台</a> |
+                <a href="" target='_blank'>系统后台</a> |
+                <a href="" target='_blank'>系统后台</a> |
+                <a href="" target='_blank'>系统后台</a> |
+                <a href="" target='_blank'>系统后台</a> |
+                <br>
+                <span>版权所有 ©2017 贵州财大--2015级软件工程--孙武</span>&nbsp;&nbsp;备案/许可证编号为：黔ICP备17001679号<br>
+                本站框架/模板：ThinkPHP 3.2.3 + Smarty || 数据库：MySql 5.5 || QQ：<strong class="cDRed">1228746736</strong><br>
+            </div>
+        </div>
+
+    </div>
+
+    <!--页面载入处理-->
+    <script>
+        $(function () {
+            $('.vip_parse_container').hide();
+        });
+
+        function show_upwork() {
+            $('.upwork_container').show();
+            $('.vip_parse_container').hide();
+
+        }
+
+        function show_vipparse() {
+            $('.upwork_container').hide();
+            $('.vip_parse_container').show();
+        }
+    </script>
+
+</div>
+</body>
+</html>

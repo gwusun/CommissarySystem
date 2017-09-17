@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简介</title>
+    <link rel="stylesheet" href="{$Think.config.BOOTSTRAP_CSS_URL}bootstrap.css">
+    <script src="{$Think.config.BOOTSTRAP_JS_URL}jquery.min.js"></script>
+    <script src="{$Think.config.BOOTSTRAP_JS_URL}bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .head {
+            position: relative;
+            background: #00A0E9;
+            height: 1.3cm;
+        }
+
+        .head img {
+            display: block;
+            float: left;
+            height: 1.1cm;
+            margin-top: 0.1cm;
+        }
+
+        .head span {
+            display: block;
+            float: left;
+            font-size: 14px;
+            margin: 15px;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        .body .body-img img {
+            width: 100%;
+        }
+
+        .body .artical p {
+            text-indent: 2em;
+            letter-spacing: 1px;
+            line-height: 25px;
+            padding: 0 5px;
+            margin-bottom: 1.5cm;
+            text-align: left;
+        }
+
+        .footer {
+            width: 100%;
+            position: fixed;
+            bottom: 0px;
+        }
+
+        .footer div {
+            padding: 11px 40px;
+            color: white;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .footer .tel {
+            float: left;
+            width: 50%;
+            height: 1.2cm;
+            background: #007AFF;
+            border-right: 1px solid white;
+        }
+
+        .footer .tel a{
+            color: white;
+        }
+
+        .footer .signup a{
+            color: white;
+        }
+
+        .footer .signup {
+            float: left;
+            width: 50%;
+            height: 1.2cm;
+            background: #007AFF;
+        }
+    </style>
+</head>
+<body>
+<div class="head">
+    <img src="{$Think.config.HOME_IMG_URL}school.png" alt="">
+    <span>只为提分而来</span>
+</div>
+<div class="body">
+    <div class="body-img">
+        <img src="{$Think.config.HOME_IMG_URL}headpic.png" alt="">
+    </div>
+    <div class="artical text-center">
+        <h3>耐思教育简介</h3>
+        <p>
+            耐思教育连锁机构成立于2015年，是一家专业从事中小学课外教育辅导的民办教育实体，主要开设课程有小学作文【魔法作文】、初高中英语【耐思英语】和初高中数学【卓越数学】。耐思教育强调“以学生智力发展”为中心，并以“实现学生综合发展”为目标，目前已经发展建设了三个校区，分别是贵阳校区、毕节校区以及安顺校区。在教学过程中我们不断突破，自主研发了区别于传统教学模式的“七步教学法”，大大提高了教学效率，改善了教学效果，真正做到了让学生能“快速提分”，取得了广大家长和学生的一致好评。</p>
+    </div>
+</div>
+<div class="footer">
+    <!--<div class="tel">电话咨询</div>-->
+    <div class="tel">
+        <a href="tel://0857-7117026">电话咨询</a><!--拨打电话-->
+    </div>
+    <!--<div class="signup">在线报名</div>-->
+    <div class="signup">
+        <a href="{:U('signUp')}">在线报名</a><!--拨打电话-->
+    </div>
+</div>
+
+</body>
+</html>

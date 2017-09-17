@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简介</title>
+    <link rel="stylesheet" href="{$Think.config.BOOTSTRAP_CSS_URL}bootstrap.min.css">
+    <script src="{$Think.config.BOOTSTRAP_JS_URL}bootstrap.js"></script>
+    <script src="{$Think.config.BOOTSTRAP_JS_URL}jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .head {
+            position: relative;
+            background: #00A0E9;
+            height: 1.3cm;
+        }
+
+        .head img {
+            display: block;
+            float: left;
+            height: 1.1cm;
+            margin-top: 0.1cm;
+        }
+
+        .head span {
+            display: block;
+            float: left;
+            font-size: 14px;
+            color: white;
+            margin: 15px;
+            letter-spacing: 1px;
+        }
+
+        .header{
+            padding: 0px;
+            margin: 0px;
+            margin-bottom: 20px;
+        }
+        .commit{
+            background: #007AFF;
+            height: 41px;
+            font-size: 15px;
+            color: white;
+            padding-top: 10px;
+            margin: 10px 5%;
+
+
+        }
+    </style>
+</head>
+<body>
+<!--头区域-->
+<div class="container-fluid header">
+    <div class="head">
+        <img src="{$Think.config.HOME_IMG_URL}school.png" alt="">
+        <span>只为提分而来</span>
+    </div>
+
+</div>
+<h3 class="text-center">已经报名的学生表</h3>
+<table class="table table-hover">
+    <tr class="text-center" style="background:#717180;color: white">
+        <td>序号</td>
+        <td>姓名</td>
+        <td>电话</td>
+        <td>意向年级</td>
+        <td>意向科目</td>
+        <td>当前水平</td>
+        <td>报名时间</td>
+    </tr>
+    <foreach name="signInfo" item="v">
+        <tr class="text-center">
+            <td class="text-center">{$v.n_id}</td>
+            <td>{$v.n_name}</td>
+            <td>{$v.n_tel}</td>
+            <td>{$v.n_grade}</td>
+            <td>{$v.n_subject}</td>
+            <td>{$v.n_level}</td>
+            <td>{$v.n_time|date="Y年m月d日h时i分s秒",###}</td>
+        </tr>
+    </foreach>
+</table>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简介</title>
+    <link rel="stylesheet" href="{$Think.config.BOOTSTRAP_CSS_URL}bootstrap.min.css">
+    <script src="{$Think.config.BOOTSTRAP_JS_URL}bootstrap.js"></script>
+    <script src="{$Think.config.BOOTSTRAP_JS_URL}jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .head {
+            position: relative;
+            background: #00A0E9;
+            height: 1.3cm;
+        }
+
+        .head img {
+            display: block;
+            float: left;
+            height: 1.1cm;
+            margin-top: 0.1cm;
+        }
+
+        .head span {
+            display: block;
+            float: left;
+            font-size: 14px;
+            color: white;
+            margin: 15px;
+            letter-spacing: 1px;
+        }
+
+        .header{
+            padding: 0px;
+            margin: 0px;
+            margin-bottom: 20px;
+        }
+        .commit{
+            background: #007AFF;
+            height: 41px;
+            font-size: 15px;
+            color: white;
+            padding-top: 10px;
+            margin: 10px 5%;
+
+
+        }
+    </style>
+</head>
+<body>
+<!--头区域-->
+<div class="container-fluid header">
+    <div class="head">
+        <img src="{$Think.config.HOME_IMG_URL}school.png" alt="">
+        <span>只为提分而来</span>
+    </div>
+
+</div>
+
+
+<!--表单区域-->
+<form action="__SELF__" method="post">
+    <div class="container-fluid header">
+
+        <br>
+        <div class="text-center">
+            <h3>耐思教育在线报名</h3>
+        </div>
+        <br>
+
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button class="btn btn-default">你的姓名</button>
+            </div>
+            <input name="name" type="text" class="form-control" aria-label="...">
+        </div>
+        <br>
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button class="btn btn-default">联系电话</button>
+            </div>
+            <input name="tel" type="text" class="form-control" aria-label="...">
+        </div>
+        <br>
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button class="btn btn-default">意向年级</button>
+            </div>
+            <select name="grade" class="form-control">
+                <option value="三年级">三年级</option>
+                <option value="四年级">四年级</option>
+                <option value="五年级">五年级</option>
+                <option value="六年级">六年级</option>
+                <option value="七年级">七年级</option>
+                <option value="八年级">八年级</option>
+                <option value="九年级">九年级</option>
+                <option value="高一年级">高一年级</option>
+                <option value="高二年级">高二年级</option>
+                <option value="高三年级">高三年级</option>
+
+            </select>
+        </div>
+        <br>
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button class="btn btn-default">意向科目</button>
+            </div>
+            <select name="subject" class="form-control">
+                <option value="作文">作文</option>
+                <option value="数学">数学</option>
+                <option value="英语">英语</option>
+                <option value="物理">物理</option>
+            </select>
+        </div>
+        <br>
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button class="btn btn-default">当前水平</button>
+            </div>
+            <select name="level" class="form-control">
+                <option value="及格以上">及格以上</option>
+                <option value="及格左右">及格左右</option>
+                <option value="及格以下">及格以下</option>
+            </select>
+        </div>
+        <br>
+
+        <input class="btn btn-primary" style="width: 100%;"  id="submit" type="submit" value="报名">
+
+        <a href="{:U('getSignUpList')}">查看报名表</a>
+        <!--<a href="{:U('getSignUpList')}">查看已报名</a>-->
+    </div>
+
+
+</form>
+
+</body>
+</html>

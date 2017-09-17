@@ -1,0 +1,116 @@
+[ 2017-08-21T07:02:12+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001926s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0022s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001984s ]
+
+[ 2017-08-21T07:02:15+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001944s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0015s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001774s ]
+
+[ 2017-08-21T07:02:17+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002329s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0019s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001209s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001315s ]
+
+[ 2017-08-21T07:07:42+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003491s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0026s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001791s ]
+
+[ 2017-08-21T07:07:49+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002083s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0023s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001852s ]
+
+[ 2017-08-21T07:08:25+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=11
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009865s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0118s ]
+SQL: update blog_user set user_download_count=84 WHERE user_stu_num='20150107030131' [ RunTime:0.0360s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 11 LIMIT 1   [ RunTime:0.0026s ]
+
+[ 2017-08-21T07:09:50+08:00 ] 192.168.56.1 /index.php/Home/User/registerCheckEmail.html?email=1228746736%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002583s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0033s ]
+SQL: SELECT `user_email` FROM `blog_user`  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001769s ]
+
+[ 2017-08-21T07:10:03+08:00 ] 192.168.56.1 /index.php/Home/User/registerCheckEmail.html?email=3380831562%40qq.com
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002530s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0037s ]
+SQL: SELECT `user_email` FROM `blog_user`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001779s ]
+
+[ 2017-08-21T07:10:22+08:00 ] 192.168.56.1 /index.php/Home/User/registerCheckStuNum.html?email=11111111111111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002578s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0047s ]
+SQL: SELECT `user_stu_num` FROM `blog_user`  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: user_email /opt/lampp/htdocs/APP/Home/Controller/UserController.class.php 第 142 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001401s ]
+
+[ 2017-08-21T07:10:25+08:00 ] 192.168.56.1 /index.php/Home/User/registerCheckStuNum.html?email=1111111111111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006004s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002037s ]
+
+[ 2017-08-21T07:10:31+08:00 ] 192.168.56.1 /index.php/Home/User/registerCheckStuNum.html?email=11111111111111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004452s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0020s ]
+SQL: SELECT `user_stu_num` FROM `blog_user`  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: user_email /opt/lampp/htdocs/APP/Home/Controller/UserController.class.php 第 142 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001802s ]
+

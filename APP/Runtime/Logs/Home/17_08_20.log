@@ -1,0 +1,1155 @@
+[ 2017-08-20T06:43:30+08:00 ]  
+ERR: 无法加载控制器:Index
+
+[ 2017-08-20T07:39:31+08:00 ] 192.168.56.1 /
+ERR: 无法加载控制器:Index
+
+[ 2017-08-20T07:39:36+08:00 ] 192.168.56.1 /
+ERR: 无法加载控制器:Index
+
+[ 2017-08-20T07:42:21+08:00 ] 192.168.56.1 /
+ERR: 无法加载控制器:Index
+
+[ 2017-08-20T07:42:25+08:00 ] 192.168.56.1 /
+ERR: 无法加载控制器:Index
+
+[ 2017-08-20T08:09:59+08:00 ] 192.168.56.1 /index.php/Home/StuWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002578s ]
+ERR: 无法加载控制器:StuWork
+
+[ 2017-08-20T08:10:46+08:00 ] 192.168.56.1 /index.php/Home/StuWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002818s ]
+ERR: 无法加载控制器:StuWork
+
+[ 2017-08-20T08:11:08+08:00 ] 192.168.56.1 /index.php/Home/StuWork/downloadFile.html?workId=7
+ERR: 无法加载控制器:StuWork
+
+[ 2017-08-20T08:11:26+08:00 ] 192.168.56.1 /index.php/Home/StuWork/downloadFile.html?workId=7
+ERR: 无法加载控制器:StuWork
+
+[ 2017-08-20T08:11:38+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001740s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000985s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001119s ]
+
+[ 2017-08-20T08:15:20+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005126s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0021s ]
+
+[ 2017-08-20T08:16:09+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002624s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0022s ]
+
+[ 2017-08-20T08:16:26+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002741s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0034s ]
+
+[ 2017-08-20T08:19:20+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001741s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2017-08-20T08:31:29+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001874s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0010s ]
+SQL: update blog_user set user_download_count=6 WHERE user_stu_num=20150107030131 [ RunTime:0.0196s ]
+
+[ 2017-08-20T08:31:58+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002944s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-20T08:33:17+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004859s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0016s ]
+SQL: update blog_user set user_download_count=7 WHERE user_stu_num='20150107030131' [ RunTime:0.0204s ]
+
+[ 2017-08-20T08:34:52+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003321s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0011s ]
+SQL: update blog_user set user_download_count=8 WHERE user_stu_num='20150107030131' [ RunTime:0.0174s ]
+
+[ 2017-08-20T08:35:24+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008049s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0016s ]
+SQL: update blog_user set user_download_count=9 WHERE user_stu_num='20150107030131' [ RunTime:0.0163s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2017-08-20T08:38:06+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003046s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0012s ]
+SQL: update blog_user set user_download_count=10 WHERE user_stu_num='20150107030131' [ RunTime:0.0139s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-20T08:40:49+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001852s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0006s ]
+SQL: update blog_user set user_download_count=11 WHERE user_stu_num='20150107030131' [ RunTime:0.0145s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-20T08:41:17+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001665s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0018s ]
+SQL: update blog_user set user_download_count=12 WHERE user_stu_num='20150107030131' [ RunTime:0.0208s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-08-20T08:41:55+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001883s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001993s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002118s ]
+
+[ 2017-08-20T08:42:55+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002070s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002440s ]
+
+[ 2017-08-20T08:43:19+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002052s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0014s ]
+SQL: update blog_user set user_download_count=13 WHERE user_stu_num='20150107030131' [ RunTime:0.0225s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2017-08-20T08:44:34+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002583s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0015s ]
+SQL: update blog_user set user_download_count=14 WHERE user_stu_num='20150107030131' [ RunTime:0.0174s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2017-08-20T08:44:42+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001848s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0006s ]
+SQL: update blog_user set user_download_count=15 WHERE user_stu_num='20150107030131' [ RunTime:0.0156s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-08-20T08:46:07+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002683s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0014s ]
+SQL: update blog_user set user_download_count=16 WHERE user_stu_num='20150107030131' [ RunTime:0.0192s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2017-08-20T08:46:51+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019792s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0020s ]
+SQL: update blog_user set user_download_count=17 WHERE user_stu_num='20150107030131' [ RunTime:0.0274s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-08-20T08:47:00+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002438s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0009s ]
+SQL: update blog_user set user_download_count=18 WHERE user_stu_num='20150107030131' [ RunTime:0.0217s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-08-20T08:47:01+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004412s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0014s ]
+SQL: update blog_user set user_download_count=19 WHERE user_stu_num='20150107030131' [ RunTime:0.0232s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-20T08:47:02+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001631s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0006s ]
+SQL: update blog_user set user_download_count=20 WHERE user_stu_num='20150107030131' [ RunTime:0.0228s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-08-20T08:47:05+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001910s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0006s ]
+SQL: update blog_user set user_download_count=21 WHERE user_stu_num='20150107030131' [ RunTime:0.0212s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-20T08:50:45+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002762s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0010s ]
+SQL: update blog_user set user_download_count=22 WHERE user_stu_num='20150107030131' [ RunTime:0.0316s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-08-20T08:53:36+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001901s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0010s ]
+SQL: update blog_user set user_download_count=23 WHERE user_stu_num='20150107030131' [ RunTime:0.0225s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2017-08-20T08:53:39+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003285s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0014s ]
+SQL: update blog_user set user_download_count=24 WHERE user_stu_num='20150107030131' [ RunTime:0.0190s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2017-08-20T08:53:40+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001987s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0012s ]
+SQL: update blog_user set user_download_count=25 WHERE user_stu_num='20150107030131' [ RunTime:0.0227s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2017-08-20T08:53:40+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001665s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0008s ]
+SQL: update blog_user set user_download_count=26 WHERE user_stu_num='20150107030131' [ RunTime:0.0291s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2017-08-20T08:53:40+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001716s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0011s ]
+SQL: update blog_user set user_download_count=27 WHERE user_stu_num='20150107030131' [ RunTime:0.0209s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-20T08:53:41+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003782s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0006s ]
+SQL: update blog_user set user_download_count=28 WHERE user_stu_num='20150107030131' [ RunTime:0.0230s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2017-08-20T08:53:41+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002096s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0015s ]
+SQL: update blog_user set user_download_count=29 WHERE user_stu_num='20150107030131' [ RunTime:0.0188s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2017-08-20T08:53:41+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001817s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0013s ]
+SQL: update blog_user set user_download_count=30 WHERE user_stu_num='20150107030131' [ RunTime:0.0198s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-20T08:53:41+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001650s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0011s ]
+SQL: update blog_user set user_download_count=31 WHERE user_stu_num='20150107030131' [ RunTime:0.0190s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-20T08:53:41+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003279s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0009s ]
+SQL: update blog_user set user_download_count=32 WHERE user_stu_num='20150107030131' [ RunTime:0.0233s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-08-20T08:53:42+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003313s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0010s ]
+SQL: update blog_user set user_download_count=33 WHERE user_stu_num='20150107030131' [ RunTime:0.0242s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-08-20T08:53:42+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0013s ]
+SQL: update blog_user set user_download_count=34 WHERE user_stu_num='20150107030131' [ RunTime:0.0189s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-08-20T08:53:42+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001672s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0011s ]
+SQL: update blog_user set user_download_count=35 WHERE user_stu_num='20150107030131' [ RunTime:0.0232s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2017-08-20T08:53:42+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003585s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0013s ]
+SQL: update blog_user set user_download_count=36 WHERE user_stu_num='20150107030131' [ RunTime:0.0223s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-20T08:53:43+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002418s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0011s ]
+SQL: update blog_user set user_download_count=37 WHERE user_stu_num='20150107030131' [ RunTime:0.0195s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-08-20T08:55:10+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002536s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0011s ]
+SQL: update blog_user set user_download_count=38 WHERE user_stu_num='20150107030131' [ RunTime:0.0155s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-08-20T08:56:11+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005054s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0021s ]
+SQL: update blog_user set user_download_count=39 WHERE user_stu_num='20150107030131' [ RunTime:0.0203s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2017-08-20T08:57:08+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004380s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0020s ]
+SQL: update blog_user set user_download_count=40 WHERE user_stu_num='20150107030131' [ RunTime:0.0199s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-20T08:58:32+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001936s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0012s ]
+SQL: update blog_user set user_download_count=41 WHERE user_stu_num='20150107030131' [ RunTime:0.0160s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2017-08-20T08:59:55+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003581s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0014s ]
+SQL: update blog_user set user_download_count=42 WHERE user_stu_num='20150107030131' [ RunTime:0.0174s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2017-08-20T09:01:17+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002017s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0027s ]
+
+[ 2017-08-20T09:01:34+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003067s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0009s ]
+SQL: update blog_user set user_download_count=43 WHERE user_stu_num='20150107030131' [ RunTime:0.0163s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-08-20T09:01:45+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002344s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0009s ]
+SQL: update blog_user set user_download_count=44 WHERE user_stu_num='20150107030131' [ RunTime:0.0282s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2017-08-20T09:02:26+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002034s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0012s ]
+SQL: update blog_user set user_download_count=45 WHERE user_stu_num='20150107030131' [ RunTime:0.0159s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-20T09:03:49+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002946s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0009s ]
+SQL: update blog_user set user_download_count=46 WHERE user_stu_num='20150107030131' [ RunTime:0.0222s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-20T09:03:51+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002025s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0006s ]
+SQL: update blog_user set user_download_count=47 WHERE user_stu_num='20150107030131' [ RunTime:0.0244s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0060s ]
+
+[ 2017-08-20T09:03:51+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001922s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0012s ]
+SQL: update blog_user set user_download_count=48 WHERE user_stu_num='20150107030131' [ RunTime:0.0196s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-20T09:03:52+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002166s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0008s ]
+SQL: update blog_user set user_download_count=49 WHERE user_stu_num='20150107030131' [ RunTime:0.0275s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-20T09:03:52+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002722s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0014s ]
+SQL: update blog_user set user_download_count=50 WHERE user_stu_num='20150107030131' [ RunTime:0.0232s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2017-08-20T09:03:52+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002948s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0006s ]
+SQL: update blog_user set user_download_count=51 WHERE user_stu_num='20150107030131' [ RunTime:0.0227s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-08-20T09:03:52+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002048s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0011s ]
+SQL: update blog_user set user_download_count=52 WHERE user_stu_num='20150107030131' [ RunTime:0.0211s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-20T09:03:53+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001979s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0013s ]
+SQL: update blog_user set user_download_count=53 WHERE user_stu_num='20150107030131' [ RunTime:0.0254s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2017-08-20T09:03:53+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002954s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0012s ]
+SQL: update blog_user set user_download_count=54 WHERE user_stu_num='20150107030131' [ RunTime:0.0235s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2017-08-20T09:03:53+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002116s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0014s ]
+SQL: update blog_user set user_download_count=55 WHERE user_stu_num='20150107030131' [ RunTime:0.0194s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-20T09:03:53+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002095s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0008s ]
+SQL: update blog_user set user_download_count=56 WHERE user_stu_num='20150107030131' [ RunTime:0.0229s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-08-20T09:03:53+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002378s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0013s ]
+SQL: update blog_user set user_download_count=57 WHERE user_stu_num='20150107030131' [ RunTime:0.0223s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-20T09:03:54+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001907s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0009s ]
+SQL: update blog_user set user_download_count=58 WHERE user_stu_num='20150107030131' [ RunTime:0.0275s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2017-08-20T09:03:54+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001920s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0011s ]
+SQL: update blog_user set user_download_count=59 WHERE user_stu_num='20150107030131' [ RunTime:0.0219s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-08-20T09:03:54+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003036s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0010s ]
+SQL: update blog_user set user_download_count=60 WHERE user_stu_num='20150107030131' [ RunTime:0.0231s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-20T09:03:54+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002091s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0010s ]
+SQL: update blog_user set user_download_count=61 WHERE user_stu_num='20150107030131' [ RunTime:0.0255s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-08-20T09:03:54+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001767s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0006s ]
+SQL: update blog_user set user_download_count=62 WHERE user_stu_num='20150107030131' [ RunTime:0.0221s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-08-20T09:03:55+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0020s ]
+SQL: update blog_user set user_download_count=63 WHERE user_stu_num='20150107030131' [ RunTime:0.0223s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-08-20T09:03:55+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003389s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0009s ]
+SQL: update blog_user set user_download_count=64 WHERE user_stu_num='20150107030131' [ RunTime:0.0222s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-08-20T09:06:20+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002615s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0012s ]
+SQL: update blog_user set user_download_count=65 WHERE user_stu_num='20150107030131' [ RunTime:0.0155s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2017-08-20T09:08:27+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005149s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0020s ]
+SQL: update blog_user set user_download_count=66 WHERE user_stu_num='20150107030131' [ RunTime:0.0223s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0031s ]
+
+[ 2017-08-20T09:08:46+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001840s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0010s ]
+SQL: update blog_user set user_download_count=67 WHERE user_stu_num='20150107030131' [ RunTime:0.0179s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2017-08-20T09:09:12+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002042s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0011s ]
+SQL: update blog_user set user_download_count=68 WHERE user_stu_num='20150107030131' [ RunTime:0.0171s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-08-20T09:09:52+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001338s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0009s ]
+SQL: update blog_user set user_download_count=69 WHERE user_stu_num='20150107030131' [ RunTime:0.0215s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2017-08-20T09:10:12+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003501s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0010s ]
+SQL: update blog_user set user_download_count=70 WHERE user_stu_num='20150107030131' [ RunTime:0.0249s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2017-08-20T09:12:32+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001832s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0031s ]
+
+[ 2017-08-20T09:12:35+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002784s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0027s ]
+
+[ 2017-08-20T09:13:01+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003320s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0057s ]
+
+[ 2017-08-20T09:13:02+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002901s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0039s ]
+
+[ 2017-08-20T09:13:03+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002271s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0030s ]
+
+[ 2017-08-20T09:13:21+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005428s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0035s ]
+
+[ 2017-08-20T09:16:55+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001921s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0011s ]
+SQL: update blog_user set user_download_count=71 WHERE user_stu_num='20150107030131' [ RunTime:0.0201s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-08-20T09:17:21+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002017s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-08-20T09:18:20+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001746s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-20T09:19:22+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004438s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0034s ]
+
+[ 2017-08-20T09:19:33+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003082s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-20T09:19:46+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002336s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-08-20T09:20:50+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002387s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-20T09:31:56+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003204s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-20T09:32:25+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001957s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0008s ]
+SQL: update blog_user set user_download_count=72 WHERE user_stu_num='20150107030131' [ RunTime:0.0139s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-08-20T09:32:29+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002395s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0010s ]
+SQL: update blog_user set user_download_count=73 WHERE user_stu_num='20150107030131' [ RunTime:0.0195s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2017-08-20T09:32:39+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003119s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0006s ]
+SQL: update blog_user set user_download_count=74 WHERE user_stu_num='20150107030131' [ RunTime:0.0198s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-08-20T09:39:33+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001913s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0006s ]
+SQL: update blog_user set user_download_count=75 WHERE user_stu_num='20150107030131' [ RunTime:0.0226s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-20T09:56:09+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002076s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0010s ]
+SQL: update blog_user set user_download_count=76 WHERE user_stu_num='20150107030131' [ RunTime:0.0142s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-20T09:59:30+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002124s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0008s ]
+SQL: update blog_user set user_download_count=77 WHERE user_stu_num='20150107030131' [ RunTime:0.0160s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2017-08-20T10:00:13+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001772s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0010s ]
+SQL: update blog_user set user_download_count=78 WHERE user_stu_num='20150107030131' [ RunTime:0.0161s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2017-08-20T10:00:53+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002570s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0012s ]
+SQL: update blog_user set user_download_count=79 WHERE user_stu_num='20150107030131' [ RunTime:0.0231s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-20T10:01:10+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001359s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0006s ]
+SQL: update blog_user set user_download_count=80 WHERE user_stu_num='20150107030131' [ RunTime:0.0196s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2017-08-20T10:02:41+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004104s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0012s ]
+SQL: update blog_user set user_download_count=81 WHERE user_stu_num='20150107030131' [ RunTime:0.0269s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-20T10:02:53+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002068s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0008s ]
+SQL: update blog_user set user_download_count=82 WHERE user_stu_num='20150107030131' [ RunTime:0.0231s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-20T10:03:01+08:00 ] 192.168.56.1 /index.php/Home/UpWork/downloadFile.html?workId=7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001885s ]
+SQL: SHOW COLUMNS FROM `blog_upwork` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `blog_user` WHERE `user_stu_num` = '20150107030131' LIMIT 1   [ RunTime:0.0006s ]
+SQL: update blog_user set user_download_count=83 WHERE user_stu_num='20150107030131' [ RunTime:0.0183s ]
+SQL: SELECT * FROM `blog_upwork` WHERE `work_id` = 7 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-20T10:04:54+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001868s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001954s ]
+
+[ 2017-08-20T10:06:24+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002887s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002024s ]
+
+[ 2017-08-20T10:07:16+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002126s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001927s ]
+
+[ 2017-08-20T10:07:21+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002580s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001668s ]
+
+[ 2017-08-20T10:18:02+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002697s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `blog_upwork_console` WHERE `con_id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-08-20T10:18:04+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002657s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `blog_upwork_console` WHERE `con_id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-08-20T10:18:16+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002070s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `blog_upwork_console` WHERE `con_id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-08-20T10:19:48+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001966s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0019s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002726s ]
+
+[ 2017-08-20T10:20:03+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001718s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0019s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-20T10:20:04+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002690s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0024s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2017-08-20T10:20:14+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002375s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0027s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-08-20T10:20:20+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002105s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0032s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-08-20T10:20:41+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002344s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0017s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-20T10:20:53+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001810s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0024s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002002s ]
+
+[ 2017-08-20T10:21:28+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004697s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0038s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002201s ]
+
+[ 2017-08-20T10:21:40+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002027s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0021s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2017-08-20T10:21:46+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002654s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0024s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001633s ]
+
+[ 2017-08-20T10:26:43+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003200s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0026s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-20T10:45:41+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002191s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0021s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-08-20T10:45:52+08:00 ] 192.168.56.1 /index.php/Home/User/checkIsLoginByAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001976s ]
+SQL: SHOW COLUMNS FROM `blog_user` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `blog_upwork_console` [ RunTime:0.0020s ]
+SQL: SELECT `con_switch` FROM `blog_upwork_console` LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001914s ]
+
+[ 2017-08-20T11:06:22+08:00 ] 192.168.56.1 /index.php/Home/VipParse/home
+ERR: 无法加载控制器:VipParse
+
+[ 2017-08-20T11:07:36+08:00 ] 192.168.56.1 /index.php/Home/VipParse/home
+ERR: 无法加载控制器:VipParse
+
+[ 2017-08-20T11:07:41+08:00 ] 192.168.56.1 /index.php/Home/VipParse/home
+ERR: 无法加载控制器:VipParse
+

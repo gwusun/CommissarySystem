@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="{$Think.config.BOOTSTRAP_CSS_URL}bootstrap.css">
+    <script src="{$Think.config.BOOTSTRAP_JS_URL}jquery.min.js"></script>
+    <script src="{$Think.config.BOOTSTRAP_JS_URL}bootstrap.js"></script>
+    <style>
+        .add_item {
+            float: right;
+            position: relative;
+        }
+
+        .user_item_input {
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+
+
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">分组列表</a></li>
+        <div class="add_item"><span style="width: 150px;letter-spacing: 10px;" data-toggle="modal"
+                                    data-target="#addItemPanel" class="btn btn-primary"><span
+                class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加组</span></div>
+    </ul>
+
+
+    <!--弹出框-->
+    <!-- Modal -->
+    <form action="./addItem.php" class="form-inline" method="post">
+        <div class="modal fade" id="addItemPanel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">组别编辑</h4>
+                    </div>
+                    <div class="modal-body" id="userAddPanel">
+
+
+                        <div class="form-group user_item_input">
+                            <label for="sysname">小组系统名称：</label>
+                            <input name="teamName" type="text" class="form-control" id="sysname" placeholder="系统名称">
+                        </div>
+                        <div class="user_item_input">
+                            <div class="form-group">
+                                <label for="leader_name">组长：</label>
+                                <input name="leaderName" type="text" class="form-control" id="leader_name"
+                                       placeholder="组长姓名">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="leader_num">组长学号：</label>
+                                <input name="leaderNum" type="text" class="form-control" id="leader_num"
+                                       placeholder="组长学号">
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="user_item_input">
+                            <div class="form-group">
+                                <label>成员：</label>
+                                <input name="userName[]" type="text" class="form-control" placeholder="成员姓名">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only">：</label>
+                                <input name="userNum[]" type="text" class="form-control" placeholder="成员学号">
+                            </div>
+                            <span onclick="addUser()" class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                        <input type="submit" value="提交">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        function addUser() {
+            var user = '<div class="user_item_input">\n' +
+                '\t\t\t\t\t\t\t\t<div class="form-group">\n' +
+                '\t\t\t\t\t\t\t\t\t<label>成员：</label>\n' +
+                '\t\t\t\t\t\t\t\t\t<input name="userName[]" type="text" class="form-control" placeholder="成员姓名">\n' +
+                '\t\t\t\t\t\t\t\t</div>\n' +
+                '\t\t\t\t\t\t\t\t<div class="form-group">\n' +
+                '\t\t\t\t\t\t\t\t\t<label class="sr-only" >：</label>\n' +
+                '\t\t\t\t\t\t\t\t\t<input name="userNum[]" type="text" class="form-control"  placeholder="成员学号">\n' +
+                '\t\t\t\t\t\t\t\t</div>\n' +
+                '\t\t\t\t\t\t\t\t<span onclick="removeUser(this)"  class="glyphicon glyphicon-minus" aria-hidden="true"></span>\n' +
+                '\t\t\t\t\t\t\t</div>';
+
+            $('#userAddPanel').append(user);
+        }
+
+        function removeUser(obj) {
+            $(obj).parent().remove();
+        }
+    </script>
+    <!--弹出框结束-->
+
+    <table class="table table-striped table-bordered">
+        <tr>
+            <td>序号</td>
+            <td>组别</td>
+            <td>项目名称</td>
+            <td>组长</td>
+            <td>组员</td>
+            <td>操作</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>第一组</td>
+            <td>资源共享系统</td>
+            <td>孙武</td>
+            <td>张三，李四，王二麻子</td>
+            <td> 修改 | 添加</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
