@@ -792,7 +792,8 @@
                     <h3 class="text-center">作业已全部交齐 <span class="badge">({$allCount}份)</span></h3>
                     <else/>
                     <foreach name="unloadStudent" item="v">
-                        <span class="un-upload-span"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>{$v.user_name}{$v.user_stu_num}</span>
+                        <!--<span class="un-upload-span"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>{$v.user_name}{$v.user_stu_num}</span>-->
+                        <span class="un-upload-span">{$v.user_name}</span>
                     </foreach>
                 </if>
             </div>

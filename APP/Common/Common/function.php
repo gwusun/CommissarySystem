@@ -9,7 +9,7 @@
 /**
  * 获取文件存储名称
  */
-function getFileName()
+function getFileNamebak()
 {
     $m = D('upwork_console');
     $info = $m->find();
@@ -31,6 +31,37 @@ function getFileName()
         $str .= $day['mon'];
     }
     $str .= $day['mday'];
+    return $str;
+}
+
+/**
+ * 获取文件存储名称
+ */
+function getFileName()
+{
+//    软件工程20150107030131孙武的实验开发报告2017.9
+    $m = D('upwork_console');
+    $info = $m->find();
+
+    $str='';
+    $str .= $info['con_major'];
+//    $str .= $info['con_grade'];
+    $str .= session('user_stu_num');
+    $str .= session('user_name');
+    $str .= $info['con_course'];
+    $str .= $info['con_course_type'];
+    $day = getdate($info['con_date']);
+    $str .= $day['year'].'.';
+    $mon = $day['mon'];
+    $str .=$mon;
+
+//    /*单位日期自动填充*/
+//    if ($mon < 10) {
+//        $str .= '0' . $mon;
+//    } else {
+//        $str .= $day['mon'];
+//    }
+//    $str .= $day['mday'];
     return $str;
 }
 
