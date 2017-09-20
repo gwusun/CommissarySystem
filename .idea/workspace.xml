@@ -60,8 +60,8 @@
       <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="741">
+              <caret line="90" column="13" lean-forward="false" selection-start-line="90" selection-start-column="2" selection-end-line="90" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -70,8 +70,8 @@
       <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Common/Common/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+            <state relative-caret-position="253">
+              <caret line="59" column="29" lean-forward="true" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
               <folding>
                 <element signature="e#88#107#0#PHP" expanded="false" />
                 <element signature="n#getFileNamebak#0;n#!!top" expanded="false" />
@@ -153,8 +153,8 @@
         <option value="&lt;17680bfa-6ba9-44dc-bf75-32a9e0efcd12&gt;/WeChat/NiceEdu/APP/Home/View/Index/signUp.html" />
         <option value="$PROJECT_DIR$/WeChat/NiceEdu/APP/Home/View/Index/signUp.html" />
         <option value="$PROJECT_DIR$/Data/view/information.html" />
-        <option value="$PROJECT_DIR$/APP/Common/Common/function.php" />
         <option value="$PROJECT_DIR$/APP/Home/View/UpWork/index.html" />
+        <option value="$PROJECT_DIR$/APP/Common/Common/function.php" />
         <option value="$PROJECT_DIR$/readme.txt" />
       </list>
     </option>
@@ -173,7 +173,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="182" />
     <option name="y" value="160" />
     <option name="width" value="1094" />
@@ -357,15 +357,15 @@
       <workItem from="1505708994086" duration="103000" />
       <workItem from="1505810706789" duration="366000" />
       <workItem from="1505819419172" duration="81000" />
-      <workItem from="1505893132333" duration="4542000" />
+      <workItem from="1505893132333" duration="5415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66713000" />
+    <option name="totallyTimeSpent" value="67586000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1065" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1065" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32622603" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -689,17 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Common/Common/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-          <folding>
-            <element signature="e#88#107#0#PHP" expanded="false" />
-            <element signature="n#getFileNamebak#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Home/View/UpWork/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
@@ -708,10 +697,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Common/Common/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="59" column="29" lean-forward="true" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+          <folding>
+            <element signature="e#88#107#0#PHP" expanded="false" />
+            <element signature="n#getFileNamebak#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="741">
+          <caret line="90" column="13" lean-forward="false" selection-start-line="90" selection-start-column="2" selection-end-line="90" selection-end-column="13" />
           <folding />
         </state>
       </provider>

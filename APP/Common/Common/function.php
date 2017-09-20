@@ -52,7 +52,7 @@ function getFileName()
     $str .= $info['con_course_type'];
     $day = getdate($info['con_date']);
     $str .= $day['year'].'.';
-    $mon = $day['mon'];
+    $mon = $day['mon'].'.';
     $str .=$mon;
 
 //    /*单位日期自动填充*/
@@ -61,7 +61,7 @@ function getFileName()
 //    } else {
 //        $str .= $day['mon'];
 //    }
-//    $str .= $day['mday'];
+    $str .= $day['mday'];
     return $str;
 }
 
