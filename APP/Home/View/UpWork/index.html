@@ -1224,8 +1224,8 @@
 
 
                                     item += "<td>" + user_item + "</td>";
-                                    item += "<td class=\"text-center\"><a href=\"__MODULE__/Team/modifyTeam/t_id/{$v.t_id}\">修改</a> | <a\n" +
-                                        "                            href=\"__MODULE__/Team/delTeam/t_id/{$v.t_id}\">删除</a></td>";
+                                    item += "<td class=\"text-center\"><a href=\"__MODULE__/Team/modifyTeam/t_id/"+v.t_id+"\">修改</a> | <a\n" +
+                                        "                            href=\"__MODULE__/Team/delTeam/t_id/"+v.t_id+"\">删除</a></td>";
                                     item += "</tr>";
                                     teamInfo += item;
                                 });

@@ -71,7 +71,6 @@ class TeamController extends \Think\Controller
         $this->checkIsLogin();
         $tID=I('get.t_id');
         $this->isAccess($tID);
-
         //是否有权限访问
 
         $teamInfo=$this->M->getTeamInfo($tID);
