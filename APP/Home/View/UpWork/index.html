@@ -112,13 +112,44 @@
             position: relative;
         }
 
+        .teamSelectNotice{
+            position: relative;
+            float: left;
+            font-size: 20px;
+            padding-left: 5px;
+            padding-right: 9px;
+            padding-top: 1px;
+            color: #333;
+            /* background: #D4CCEA; */
+            border-radius: 5px;
+            border: 1px solid #424242;
+            border-right: 0px;
+            height: 32px;
+            margin-right: -136px;
+            margin-top: 0px;
+            width: 287px;
+        }
+
+        .teamSelect{
+            position: relative;
+            float: left;
+
+        }
         .user_item_input {
             padding: 5px;
             margin: 10px;
         }
 
         .drop_down {
-            border-bottom: 0px;
+            position: relative;
+            float: left;
+            height: 32px;
+            background: rgba(0, 0, 0, 0.74);
+            color: white;
+            padding: 2px;
+            font-size: 12px;
+            text-align: center;
+            border: 0px;
         }
 
         .drop_down_add {
@@ -126,7 +157,7 @@
         }
 
         body{
-            background: url("./bg.jpg");
+            background: url("/bg.jpg");
             background-repeat:no-repeat ;
             background-size:100% 100%;
             background-attachment: fixed;"
@@ -145,7 +176,7 @@
     <!--头部 用户处理部分-->
     <div class="head_container">
         <!--导航-->
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-inverse">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                         data-target="#inverseNavbar1">
@@ -1167,28 +1198,22 @@
     <!--团队表部分-->
     <div class="teamer">
         <ul class="nav nav-tabs">
-            <!--<li role="presentation" class="active"><a href="#">分组列表</a></li>-->
             <li role="presentation" class="active">
-                <!--<div class="dropdown">-->
-                <!--<button class="btn btn-default dropdown-toggle drop_down" type="button" id="addDropDown"-->
-                <!--data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
-                <!--&#45;&#45;全部&#45;&#45;-->
-                <!--<span class="caret"></span>-->
-                <!--</button>-->
-                <!--<ul class="dropdown-menu" aria-labelledby="addDropDown">-->
-                <!--<foreach name="teamCategory" item="v">-->
-                <!--<li><a href="#">{$v.cat_name}</a></li>-->
 
-                <!--</foreach>-->
-                <!--&lt;!&ndash;<li role="separator" class="divider"></li>&ndash;&gt;-->
-                <!--</ul>-->
-                <!--</div>-->
-                <select onchange="changeTeamInfo($(this))" class="form-control drop_down">
-                    <option value="-1" selected>-全部分组-</option>
-                    <foreach name="teamCategory" item="v">
-                        <option value="{$v.cat_id}">{$v.cat_name}</option>
-                    </foreach>
-                </select>
+                <div class="teamSelectNotice">请选择课程类别</div>
+
+                <!--类别查看框-->
+                <div class="teamSelect">
+                    <select onchange="changeTeamInfo($(this))" class="form-control drop_down">
+                        <option class="" selected>-选择课程查看分组-</option>
+                        <option class="" value="-1">全部课程</option>
+                        <foreach name="teamCategory" item="v">
+                            <option value="{$v.cat_id}">{$v.cat_name}</option>
+                        </foreach>
+                    </select>
+                </div>
+             
+
                 <!--根据分类获取分组-->
                 <script>
                     function changeTeamInfo(obj) {
@@ -1200,10 +1225,8 @@
                             type: 'get',
                             success: function (msg) {
                                 /*处理接受到的信息*/
-//                                console.log(msg);
                                 var teamInfo = "";
                                 $.each(msg, function (k, v) {
-//                                    console.log(v);
                                     var item = '';
                                     item += "<tr>";
                                     item += "<td class=\"text-center\">" + v.t_id + "</td>";
@@ -1237,9 +1260,9 @@
                     }
                 </script>
             </li>
-            <div class="add_item"><span style="width: 150px;letter-spacing: 10px;" data-toggle="modal"
-                                        data-target="#addItemPanel" class="btn btn-primary"><span
-                    class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加组</span></div>
+            <div class="add_item"><span style="width: 150px;letter-spacing: 10px;" data-toggle="modal"  data-target="#addItemPanel" class="btn btn-primary">
+                <span  class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加组</span>
+            </div>
         </ul>
 
 
@@ -1329,6 +1352,7 @@
         <!--弹出框结束-->
 
         <table class="table table-bordered team_table">
+            <br>
             <tr class="text-center">
                 <td>序号</td>
                 <td>课程名称</td>
@@ -1367,18 +1391,18 @@
         <div id="footer">
             <div class="a2">
                 <a href="{:U('Admin/UpWorkConsole/showConsole')}" target='_blank'>系统后台</a> |
-                <a href="" target='_blank'>打包下载</a> |
-                <a href="" target='_blank'>这里是天</a> |
-                <a href="" target='_blank'>这里是地</a> |
-                <a href="" target='_blank'>这是天堂</a> |
-                <a href="" target='_blank'>这是地域</a> |
-                <a href="" target='_blank'>这不是我</a> |
-                <a href="" target='_blank'>这里是你</a> |
-                <a href="" target='_blank'>课程类别管理</a> |
-                <a href="" target='_blank'>关于我们</a>
+                <a href="https://github.com/sunwu7096/CommissarySystem" target='_blank'>系统源码</a> |
+                <a href="https://github.com/sunwu7096" target='_blank'>GitHub</a> |
+                <a href="/WeChat/NiceEdu/index.php" target='_blank'>Nice教育</a> |
+                <a href="https://account.aliyun.com/login/login.htm?oauth_callback=http%3A%2F%2Fnetcn.console.aliyun.com%2Fcore%2Fhost%2Flist2" target='_blank'>服务器</a> |
+                <a href="https://dms-net.aliyun.com/?spm=0.0.0.0.EcbitF&host=bdm27321943.my3w.com&port=3306&dbType=MySQL&userName=bdm27321943" target='_blank'>数据库</a> |
+
+                <a href="/APP/Help/version.php" target='_blank'>更新日志</a> |
+                <a href="/APP/Help/IntroMe/index.html" target='_blank'>关于我</a> |
+                <a href="#" target='_blank'>反馈留言</a>
                 <br>
                 <span>ThinkPHP3.2.3  MySql5.5  XAMPP5.6.7 Centos6.6 PHPstorm2017 SVN PHPMailer</span><br>
-                <span> ©2017 孙武 QQ：<strong class="cDRed">1228746736</strong>&nbsp;备案/许可证编号为：黔ICP备17001679号</span>
+                <span> ©2017 孙武 QQ：<strong class="cDRed">1228746736</strong> Tel:18212722133 备案/许可证编号为：黔ICP备17001679号</span>
 
             </div>
         </div>

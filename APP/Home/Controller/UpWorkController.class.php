@@ -20,12 +20,15 @@ class UpWorkController extends \Think\Controller
     }
 
     /**
-     * 保存上传文件
+     * 保存ajax上传文件
      */
     function fileSave()
     {
         if (!empty($_FILES)) {
             /*检查是否登陆  检查功能是否开启*/
+
+
+            //实例化类，并设置上传参数
             $upload = new \Think\Upload();
             $upload->saveName = getFileName();
             $upload->savePath = getFileSavePath();
@@ -34,6 +37,14 @@ class UpWorkController extends \Think\Controller
 //            $upload->rootPath = getFileSaveRoot();
             $upload->replace = true;
             $info = $upload->upload();
+//            dump($info);
+            $upInfo=$info['upFile'];
+
+            //返回参考信息
+            $upInfoStatus="<h5 style='color: red'><hr>上传详情：</h5>"."上传文件原名：".$upInfo['name']."<br>";
+            $upInfoStatus.="文件保存信息：".$upInfo['savepath'].$upInfo['savename']."<br>";
+            $upInfoStatus.="上传文件大小：".$upInfo['size']."kb"."<br>";
+
             if ($info) {
                 /*收集数据库保存信息*/
                 $mWCon = D('upwork_console');
@@ -56,6 +67,7 @@ class UpWorkController extends \Think\Controller
                     /*没有上传过*/
                     $mUpWork->add($saveInfo);
                     echo "<h1 class='text-center'>文件上传成功</h1>";
+                    echo $upInfoStatus;
                 } else {
                     /*已上传过*/
                     $oldFile = $this->M->getOldFileName($oldWorkInfo);
@@ -83,10 +95,12 @@ end;
                     $mUpWork->where("work_stu_num={$username}")->save($saveInfo);
 
                     echo $str;
+                    echo $upInfoStatus;
                 }
 
             } else {
-                dump($upload->getError());
+                $info=$upload->getError();
+                echo "<h3 style='color: red;text-align: center'>$info</h3>";
             }
         } else {
             echo "没有文件上传";
@@ -94,6 +108,10 @@ end;
 
     }
 
+
+    /**
+     * 主界面
+     */
     function index()
     {
 
@@ -123,8 +141,8 @@ end;
         $this->assign("unloadStudent", $unloadStudent);
 
         /*获取分组详细*/
-        $teamInfo=$this->M->getTeamInfo();
-        $this->assign("teamInfo",$teamInfo);
+//        $teamInfo=$this->M->getTeamInfo();
+//        $this->assign("teamInfo",$teamInfo);
 
         /*获取分组类别*/
         $teamCate=$this->M->getTeamCategory();
