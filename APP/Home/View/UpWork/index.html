@@ -13,6 +13,8 @@
     <script src="{$Think.config.BOOTSTRAP_JS_URL}jquery.min.js"></script>
     <script src="{$Think.config.BOOTSTRAP_JS_URL}bootstrap.js"></script>
     <script src="{$Think.config.HOME_JS_URL}sw.js"></script>
+    <script src="/APP/Plugins/Tools/File.class.js"></script>
+    <script src="/APP/Plugins/Tools/Form.class.js"></script>
     <style>
         .my-title {
             float: left;
@@ -168,6 +170,11 @@
             border-radius: 10px;
         }
     </style>
+
+    <!--初始变量定义-->
+    <script>
+        var UPLOADMAXFILESIZE=1024*10;
+    </script>
 </head>
 <body>
 <div class="container" style="min-width: 918px;">
@@ -743,6 +750,56 @@
 
     <!--作业提交部分-->
     <div class="upwork_container">
+
+        <!--作业提交框-->
+        <div id="upFileBox" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog"
+             aria-labelledby="myLargeModalLabel">
+            <a id='upworkBox' data-toggle="modal" data-target=".bs-example-modal-lg" href=""></a>
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true" onclick="">&times;</span></button>
+                        <h4 class="modal-title" id="gridSystemModalLabel">选择作业</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="info"></div>
+                        <!--文件筐-->
+                        <div class="file_box">
+                        <span onclick="open_file()" class="glyphicon glyphicon-folder-open open-file-btn"
+                              aria-hidden="true"></span>
+                            <span class="file_info"><font color="red">点击左边文件按钮请选择作业</font></span>
+                        </div>
+
+                        <!--进度条-->
+                        <div class="process_box">
+                            <div class="progress">
+                                <div id="proBar" class="progress-bar" role="progressbar" aria-valuenow="60"
+                                     aria-valuemin="0"
+                                     aria-valuemax="100" style="width: 0%;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" id="submit_box">
+                        <form id='frm' onsubmit="return false">
+                            <input type="hidden" name="type" value="file">
+                            <input id="upFile" type="file" name="upFile" style="display: none">
+                            <input id="submit_btn" onclick="return window.confirm('你已经选择好文件,确认提交吗?');" type="submit"
+                                   class="btn btn-primary" style="width: 100%">
+                        </form>
+
+                    </div>
+                    <div id="btn_group2" class="modal-footer">
+                        <button onclick="resetNowWindow()" style="width: 100%;" type="button" class="btn btn-primary"
+                                data-dismiss="modal">关闭
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--用户信息框-->
         <div class="panel panel-default user-info-div">
             <div class="panel-body">
@@ -786,7 +843,6 @@
                       alt="作业上传">
             </div>
         </ul>
-
 
         <!--处理已交作业和未交作业框-->
         <script>
@@ -898,57 +954,6 @@
             </script>
         </div>
 
-
-        <!--提交作业框-->
-        <div id="upFileBox" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog"
-             aria-labelledby="myLargeModalLabel">
-            <a id='upworkBox' data-toggle="modal" data-target=".bs-example-modal-lg" href=""></a>
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="gridSystemModalLabel">选择作业</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div id="info"></div>
-                        <!--文件筐-->
-                        <div class="file_box">
-                        <span onclick="open_file()" class="glyphicon glyphicon-folder-open open-file-btn"
-                              aria-hidden="true"></span>
-                            <span class="file_info"><font color="red">点击左边文件按钮请选择作业</font></span>
-                        </div>
-
-                        <!--进度条-->
-                        <div class="process_box">
-                            <div class="progress">
-                                <div id="proBar" class="progress-bar" role="progressbar" aria-valuenow="60"
-                                     aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 20%;">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer" id="submit_box">
-                        <form id='frm' action="{:U('UpWork/fileSave')}" method="post" enctype="multipart/form-data">
-                            <input type="hidden" name="type" value="file">
-                            <input id="upFile" type="file" name="upFile" style="display: none">
-                            <input id="submit_btn" onclick="return window.confirm('你已经选择好文件,确认提交吗?');" type="submit"
-                                   class="btn btn-primary" style="width: 100%">
-                        </form>
-
-                    </div>
-                    <div id="btn_group2" class="modal-footer">
-                        <button onclick="resetNowWindow()" style="width: 100%;" type="button" class="btn btn-primary"
-                                data-dismiss="modal">关闭
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
         <!--未登陆提示框-->
         <div class="unload-msg-div">
             <a id="unload" href="#" data-toggle="modal" data-target="#unloadMsg"></a>
@@ -1014,6 +1019,38 @@
 
         </div>
 
+        <!--文件过大提示框-->
+        <div class="unload-msg-div" id="overFileMaxPanel">
+            <a id="overFileMax" href="#" data-toggle="modal" data-target="#over"></a>
+            <div id="over" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    id="unloadClose1223"
+                                    aria-hidden="true" onclick="resetNowWindow()">&times;</span></button>
+                            <h4 class="modal-title" id="gridSystemModalLabel1223">错误提示</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h3 class="text-center">
+                                <font color="red">文件最大为10M，请检查文件！</font>
+                            </h3>
+                            <hr>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                /*尚未登陆处理*/
+                function dealWithUnLogin() {
+                    $('#unloadClose').click();
+                    $('#loginTragger').click();
+                }
+            </script>
+
+        </div>
+
         <!--下载提示框-->
         <div class="unload-msg-div">
             <a id="download" href="#" data-toggle="modal" data-target="#downloadMsg"></a>
@@ -1051,7 +1088,17 @@
 
         <!--上传文件处理-->
         <script>
-            /*检查是否登陆*/
+
+            /**
+             * 影藏上传文件过大面板
+             */
+            function closeOverFileMaxPanel() {
+                $('#overFileMaxPanel').hide();
+            }
+
+            /**
+             * 检查是否登陆
+             * */
             function checkIsLogin() {
                 $.ajax({
                     url: "{:U('User/checkIsLoginByAjax')}",
@@ -1071,70 +1118,92 @@
                 });
             }
 
-            /*上传文件处理*/
+            /**
+             *点击出发input的单击事件
+             * */
             function open_file() {
                 $('#upFile').click();
             }
 
-            /**/
+            /**
+             * input的文件发生变化时显示
+             * */
             $(function () {
                 $('#upFile').change(function () {
-                    console.log($('#upFile').val());
                     $('.file_info').html($('#upFile').val());
                 });
 
             });
 
-            /*进度条处理*/
+            /**
+             * 进度条处理
+             * */
             $(function () {
                 $('.process_box').hide();
                 $('#submit_btn').click(function () {
                     $(".file_box").hide();
-                    $('.process_box').show();
+                    //验证上传文件
+                    var fileSize=getFileSize('upFile');
+                    if(fileSize>UPLOADMAXFILESIZE){
+                        $('#upFileBox').hide();//影藏文件上传框
+                        $('#overFileMax').click();
+                    }
+                    if(fileSize<UPLOADMAXFILESIZE){
+                        $('.process_box').show();
+
+                    }
                     $("#gridSystemModalLabel").html('文件上传进度');
                     $("#submit_box").hide();
                 });
             });
-        </script>
 
-        <!--文件上传部分-->
-        <script>
 
+            /**
+             * 刷新窗口
+             */
             function resetNowWindow() {
                 location.reload();
             }
 
+            /**
+             * 异步上传文件处理
+             */
             $(function () {
                 $("#btn_group2").hide();
                 $('#frm').submit(function () {
-                    var fd = new FormData($('#frm')['0']);
 
-                    var xhr = new XMLHttpRequest();
+                    var upLoadFileSize=getFileSize('upFile');
+                    //文件小于10m就提交，否者不执行任何动作
+                    if(upLoadFileSize<UPLOADMAXFILESIZE){
+                        var fd = new FormData($('#frm')['0']);
+                        var xhr = new XMLHttpRequest();
+                        xhr.onreadystatechange = function () {
+                            if (xhr.readyState == 4) {
+                                $("#info").html(xhr.responseText);
+                            }
+                        };
+                        xhr.upload.onprogress = function (e) {
+                            var load = e.loaded;
+                            var total = e.total;
+                            var per = Math.floor((load / total) * 100) + "%";
+                            $("#proBar").width(per);
+                            $("#proBar").html(per);
+                            if (Math.floor((load / total) * 100) == 100) {
+                                $("#info").html(xhr.responseText);
+                                $(".process_box").hide();
+//                                $("#btn_group2").show();
 
-                    xhr.onreadystatechange = function () {
-                        if (xhr.readyState == 4) {
-                            $("#info").html(xhr.responseText);
-                        }
-                    };
-                    xhr.upload.onprogress = function (e) {
-                        var load = e.loaded;
-                        var total = e.total;
-                        var per = Math.floor((load / total) * 100) + "%";
-                        $("#proBar").width(per);
-                        $("#proBar").html(per);
-                        if (Math.floor((load / total) * 100) == 100) {
-                            $("#info").html(xhr.responseText);
-                            $(".process_box").hide();
-                            $("#btn_group2").show();
+                            }
 
-                        }
-                    };
-                    xhr.open('post', "{:U('UpWork/fileSave')}");
-                    xhr.send(fd);
-                    return false;
+                        };
+                        xhr.open('post', "{:U('UpWork/fileSave')}");
+                        xhr.send(fd);
+                    }
+
                 });
             });
         </script>
+
     </div>
 
     <!--VIP解析部分-->

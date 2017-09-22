@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery.min.js"></script>
+    <script src="File.class.js">
+
+    </script>
+</head>
+<body>
+<input type="file" name="upFile" id="upFile">
+    <script >
+        $(function () {
+            $('#upFile').change(function () {
+//                var input = document.getElementById("upFile");
+//                console.log(input);
+//                var file = input.files[0];
+//                console.log("文件名:" + file.name);
+//                console.log("文件类型:" + file.type);
+//                console.log("文件大小:" + Math.ceil(file.size/1024));
+//                function readFile() {
+
+
+//                }
+                var input = document.getElementById('upFile');
+                console.log(input);
+                var file = input.files[0];
+                console.log(file);
+
+
+                var fileInput=$("#upFile");
+                console.log(fileInput);
+                var f=fileInput[0].file[0];
+                console.log(f);
+
+            });
+
+        });
+
+    </script>
+</body>
+</html>

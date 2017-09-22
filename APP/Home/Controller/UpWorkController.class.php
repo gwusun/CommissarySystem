@@ -27,7 +27,6 @@ class UpWorkController extends \Think\Controller
         if (!empty($_FILES)) {
             /*检查是否登陆  检查功能是否开启*/
 
-
             //实例化类，并设置上传参数
             $upload = new \Think\Upload();
             $upload->saveName = getFileName();
@@ -37,13 +36,12 @@ class UpWorkController extends \Think\Controller
 //            $upload->rootPath = getFileSaveRoot();
             $upload->replace = true;
             $info = $upload->upload();
-//            dump($info);
             $upInfo=$info['upFile'];
 
             //返回参考信息
             $upInfoStatus="<h5 style='color: red'><hr>上传详情：</h5>"."上传文件原名：".$upInfo['name']."<br>";
             $upInfoStatus.="文件保存信息：".$upInfo['savepath'].$upInfo['savename']."<br>";
-            $upInfoStatus.="上传文件大小：".$upInfo['size']."kb"."<br>";
+            $upInfoStatus.="上传文件大小：".(ceil($upInfo['size']/(1024)))."kb"."<br>";
 
             if ($info) {
                 /*收集数据库保存信息*/
@@ -63,13 +61,23 @@ class UpWorkController extends \Think\Controller
                 $mUpWork = D('upwork');
                 $username = session('user_stu_num');
                 $oldWorkInfo = $mUpWork->where("work_stu_num={$username} and work_is_del='未删除'")->find();
+
+                //获取物理信息，判断是否成功
+                $deskExistFileName=$saveInfo['work_save_path'];
+                $root=getcwd();
+                $deskExistFileName=$root.substr($deskExistFileName,1);//物理文件
+
                 if (empty($oldWorkInfo)) {
-                    /*没有上传过*/
-                    $mUpWork->add($saveInfo);
-                    echo "<h1 class='text-center'>文件上传成功</h1>";
-                    echo $upInfoStatus;
+                    //没有上传过
+                    if(file_exists($deskExistFileName)){
+                        $mUpWork->add($saveInfo);
+                        echo "<h1 class='text-center'>文件上传成功</h1>";
+                        echo $upInfoStatus;
+                    }else{
+                        echo "<h1 class='text-center'>文件上传失败！</h1><br>提示：你可以修改文件名重试~这是我发现的办法";
+                    }
                 } else {
-                    /*已上传过*/
+                    //已上传过
                     $oldFile = $this->M->getOldFileName($oldWorkInfo);
                     $oldFileName = getFIleNameFromPath($oldFile);
                     $newFileName = $saveInfo['work_name'];
@@ -88,14 +96,22 @@ end;
 
                     /*删除就文件*/
                     $fd = new FileDelete();
-                    if (file_exists($oldFile)) {
-                        $fd->delOneFile($oldFile);
+                    if(!$deskExistFileName ==$oldFile){
+                        if (!$fd->delOneFile($oldFile)) {
+                            die('系统异常（删除旧文件错误）');
+                        }
                     }
-                    /*更新数据库信息*/
-                    $mUpWork->where("work_stu_num={$username}")->save($saveInfo);
 
-                    echo $str;
-                    echo $upInfoStatus;
+                    if(file_exists($deskExistFileName)){
+                        /*更新数据库信息*/
+                        $mUpWork->where("work_stu_num={$username}")->save($saveInfo);
+
+                        echo $str;
+                        echo $upInfoStatus;
+                    }else{
+                        echo "<h1 class='text-center'>文件上传失败！</h1><br>提示：你可以修改文件名重试~这是我发现的办法";
+                    }
+
                 }
 
             } else {
@@ -103,7 +119,7 @@ end;
                 echo "<h3 style='color: red;text-align: center'>$info</h3>";
             }
         } else {
-            echo "没有文件上传";
+            echo "<h3 style='color: red;'>文件过大，服务器无法处理</h3>";
         }
 
     }

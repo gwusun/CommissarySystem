@@ -29,9 +29,12 @@ class FileDelete extends FileObject {
      * @param $dir 文件名称(包含路径)
      */
     function delOneFile($fileName){
-        if(!unlink($fileName)){
-            die("删除文件{$fileName}失败!");
+        if(file_exists($fileName)){
+            if(!unlink($fileName)){
+                return false;
+            }
         }
+        return true;
     }
 
 }
