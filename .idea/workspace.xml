@@ -35,8 +35,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APP/Home/View/UpWork/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="761" column="60" lean-forward="false" selection-start-line="761" selection-start-column="60" selection-end-line="761" selection-end-column="60" />
+            <state relative-caret-position="459">
+              <caret line="1193" column="57" lean-forward="false" selection-start-line="1193" selection-start-column="57" selection-end-line="1193" selection-end-column="57" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="e#881#917#0" expanded="false" />
@@ -323,7 +323,6 @@
                 <element signature="n#script#0;n#div#8;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="e#49805#49815#0" expanded="false" />
                 <element signature="e#49859#49973#0" expanded="false" />
-                <element signature="n#script#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="e#50066#50111#0" expanded="false" />
                 <element signature="e#50233#50276#0" expanded="false" />
                 <element signature="e#50313#50976#0" expanded="false" />
@@ -333,11 +332,9 @@
                 <element signature="e#51074#51127#0" expanded="false" />
                 <element signature="e#51141#51193#0" expanded="false" />
                 <element signature="e#51220#51368#0" expanded="false" />
-                <element signature="e#51384#51426#0" expanded="false" />
-                <element signature="e#51453#52126#0" expanded="false" />
-                <element signature="e#52143#52182#0" expanded="false" />
-                <element signature="e#52221#52271#0" expanded="false" />
-                <element signature="e#52285#52328#0" expanded="false" />
+                <element signature="e#52155#52194#0" expanded="false" />
+                <element signature="e#52233#52283#0" expanded="false" />
+                <element signature="e#52297#52340#0" expanded="false" />
                 <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -350,7 +347,7 @@
                 <element signature="n#input#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#script#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#55607#55886#0" expanded="false" />
+                <element signature="e#55581#55860#0" expanded="false" />
                 <element signature="n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#a#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#6;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -364,12 +361,12 @@
                 <element signature="n#select#0;n#div#1;n#li#0;n#ul#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#foreach#0;n#select#0;n#div#1;n#li#0;n#ul#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#script#0;n#li#0;n#ul#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#57656#59992#0" expanded="false" />
-                <element signature="e#57736#59968#0" expanded="false" />
-                <element signature="e#58001#59942#0" expanded="false" />
-                <element signature="e#58035#58047#0" expanded="false" />
-                <element signature="e#58159#59714#0" expanded="false" />
-                <element signature="e#58872#59162#0" expanded="false" />
+                <element signature="e#57630#59966#0" expanded="false" />
+                <element signature="e#57710#59942#0" expanded="false" />
+                <element signature="e#57975#59916#0" expanded="false" />
+                <element signature="e#58009#58021#0" expanded="false" />
+                <element signature="e#58133#59688#0" expanded="false" />
+                <element signature="e#58846#59136#0" expanded="false" />
                 <element signature="n#div#0;n#ul#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#span#0;n#div#0;n#ul#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -393,8 +390,8 @@
                 <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#script#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#63886#64812#0" expanded="false" />
-                <element signature="e#64851#64908#0" expanded="false" />
+                <element signature="e#63860#64786#0" expanded="false" />
+                <element signature="e#64825#64882#0" expanded="false" />
                 <element signature="n#table#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#tr#0;n#table#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#foreach#0;n#table#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -408,10 +405,10 @@
                 <element signature="n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#script#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#67651#67741#0" expanded="false" />
-                <element signature="e#67776#67910#0" expanded="false" />
-                <element signature="e#67945#68078#0" expanded="false" />
-                <element signature="e#68109#68242#0" expanded="false" />
+                <element signature="e#67625#67715#0" expanded="false" />
+                <element signature="e#67750#67884#0" expanded="false" />
+                <element signature="e#67919#68052#0" expanded="false" />
+                <element signature="e#68083#68216#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -431,39 +428,11 @@
         <entry file="file://$PROJECT_DIR$/VERSION.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="580">
-                <caret line="117" column="17" lean-forward="true" selection-start-line="117" selection-start-column="10" selection-end-line="117" selection-end-column="17" />
+              <first_editor relative-caret-position="534">
+                <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpWorkController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Home/Controller/UpWorkController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="109" column="43" lean-forward="true" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
-              <folding>
-                <element signature="e#2986#3368#0#PHP" expanded="false" />
-                <marker date="1506090866643" expanded="true" signature="919:929" ph="..." />
-                <marker date="1506090866643" expanded="false" signature="3041:3051" ph="..." />
-                <marker date="1506090866643" expanded="false" signature="3114:3125" ph="..." />
-                <marker date="1506090866643" expanded="true" signature="4178:4207" ph="..." />
-                <marker date="1506090866643" expanded="true" signature="4282:4293" ph="..." />
-                <marker date="1506090866643" expanded="true" signature="4292:4293" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="version.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APP/Help/version.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -494,13 +463,13 @@
       <find>课程名称</find>
       <find>上传</find>
       <find>提交</find>
-      <find>submit_btn</find>
       <find>file_box</find>
       <find>文件上传进度</find>
       <find>选择作业</find>
       <find>overFileMaxPanel</find>
       <find>x</find>
       <find>文件提交</find>
+      <find>submit_btn</find>
     </findStrings>
     <replaceStrings>
       <replace>addDropDown</replace>
@@ -552,9 +521,9 @@
         <option value="$PROJECT_DIR$/Data/test/preventSubmit.html" />
         <option value="$PROJECT_DIR$/APP/Help/version.php" />
         <option value="$PROJECT_DIR$/APP/Plugins/Tools/File/FileDelete.class.php" />
-        <option value="$PROJECT_DIR$/VERSION.md" />
-        <option value="$PROJECT_DIR$/APP/Home/View/UpWork/index.html" />
         <option value="$PROJECT_DIR$/APP/Home/Controller/UpWorkController.class.php" />
+        <option value="$PROJECT_DIR$/APP/Home/View/UpWork/index.html" />
+        <option value="$PROJECT_DIR$/VERSION.md" />
       </list>
     </option>
   </component>
@@ -648,21 +617,6 @@
               <item name="CommissarySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="APP" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="CommissarySystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommissarySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="APP" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tools" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="CommissarySystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CommissarySystem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="APP" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tools" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="File" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="CommissarySystem" type="b2602c69:ProjectViewProjectNode" />
@@ -782,19 +736,19 @@
       <workItem from="1505893132333" duration="5415000" />
       <workItem from="1506008247693" duration="2472000" />
       <workItem from="1506055284597" duration="12738000" />
-      <workItem from="1506075100541" duration="15490000" />
+      <workItem from="1506075100541" duration="17249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98286000" />
+    <option name="totallyTimeSpent" value="100045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1065" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.010127932" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20362474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27985075" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14285715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07599119" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18283582" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -804,7 +758,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07599119" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07599119" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -872,13 +826,19 @@
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/APP/Home/View/UpWork/index.html</url>
+          <line>1094</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/APP/Home/Model/TeamModel.class.php</url>
           <line>51</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1155,14 +1115,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Help/version.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Plugins/Tools/File/FileCompress.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-667">
@@ -1195,10 +1147,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Data/test/preventSubmit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/APP/Home/View/UpWork/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="761" column="60" lean-forward="false" selection-start-line="761" selection-start-column="60" selection-end-line="761" selection-end-column="60" />
+        <state relative-caret-position="459">
+          <caret line="1193" column="57" lean-forward="false" selection-start-line="1193" selection-start-column="57" selection-end-line="1193" selection-end-column="57" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#881#917#0" expanded="false" />
@@ -1485,7 +1445,6 @@
             <element signature="n#script#0;n#div#8;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#49805#49815#0" expanded="false" />
             <element signature="e#49859#49973#0" expanded="false" />
-            <element signature="n#script#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#50066#50111#0" expanded="false" />
             <element signature="e#50233#50276#0" expanded="false" />
             <element signature="e#50313#50976#0" expanded="false" />
@@ -1495,11 +1454,9 @@
             <element signature="e#51074#51127#0" expanded="false" />
             <element signature="e#51141#51193#0" expanded="false" />
             <element signature="e#51220#51368#0" expanded="false" />
-            <element signature="e#51384#51426#0" expanded="false" />
-            <element signature="e#51453#52126#0" expanded="false" />
-            <element signature="e#52143#52182#0" expanded="false" />
-            <element signature="e#52221#52271#0" expanded="false" />
-            <element signature="e#52285#52328#0" expanded="false" />
+            <element signature="e#52155#52194#0" expanded="false" />
+            <element signature="e#52233#52283#0" expanded="false" />
+            <element signature="e#52297#52340#0" expanded="false" />
             <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1512,7 +1469,7 @@
             <element signature="n#input#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#55607#55886#0" expanded="false" />
+            <element signature="e#55581#55860#0" expanded="false" />
             <element signature="n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#a#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#6;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1526,12 +1483,12 @@
             <element signature="n#select#0;n#div#1;n#li#0;n#ul#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#foreach#0;n#select#0;n#div#1;n#li#0;n#ul#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#0;n#li#0;n#ul#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#57656#59992#0" expanded="false" />
-            <element signature="e#57736#59968#0" expanded="false" />
-            <element signature="e#58001#59942#0" expanded="false" />
-            <element signature="e#58035#58047#0" expanded="false" />
-            <element signature="e#58159#59714#0" expanded="false" />
-            <element signature="e#58872#59162#0" expanded="false" />
+            <element signature="e#57630#59966#0" expanded="false" />
+            <element signature="e#57710#59942#0" expanded="false" />
+            <element signature="e#57975#59916#0" expanded="false" />
+            <element signature="e#58009#58021#0" expanded="false" />
+            <element signature="e#58133#59688#0" expanded="false" />
+            <element signature="e#58846#59136#0" expanded="false" />
             <element signature="n#div#0;n#ul#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#span#0;n#div#0;n#ul#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1555,8 +1512,8 @@
             <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#63886#64812#0" expanded="false" />
-            <element signature="e#64851#64908#0" expanded="false" />
+            <element signature="e#63860#64786#0" expanded="false" />
+            <element signature="e#64825#64882#0" expanded="false" />
             <element signature="n#table#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#tr#0;n#table#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#foreach#0;n#table#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1570,34 +1527,34 @@
             <element signature="n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#67651#67741#0" expanded="false" />
-            <element signature="e#67776#67910#0" expanded="false" />
-            <element signature="e#67945#68078#0" expanded="false" />
-            <element signature="e#68109#68242#0" expanded="false" />
+            <element signature="e#67625#67715#0" expanded="false" />
+            <element signature="e#67750#67884#0" expanded="false" />
+            <element signature="e#67919#68052#0" expanded="false" />
+            <element signature="e#68083#68216#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/test/preventSubmit.html">
+    <entry file="file://$PROJECT_DIR$/APP/Help/version.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        <state relative-caret-position="161">
+          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/APP/Home/Controller/UpWorkController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="109" column="43" lean-forward="true" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
+        <state relative-caret-position="237">
+          <caret line="98" column="44" lean-forward="false" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
           <folding>
             <element signature="e#2986#3368#0#PHP" expanded="false" />
-            <marker date="1506090866643" expanded="true" signature="919:929" ph="..." />
-            <marker date="1506090866643" expanded="false" signature="3041:3051" ph="..." />
-            <marker date="1506090866643" expanded="false" signature="3114:3125" ph="..." />
-            <marker date="1506090866643" expanded="true" signature="4178:4207" ph="..." />
-            <marker date="1506090866643" expanded="true" signature="4282:4293" ph="..." />
-            <marker date="1506090866643" expanded="true" signature="4292:4293" ph="..." />
+            <marker date="1506091955540" expanded="true" signature="919:929" ph="..." />
+            <marker date="1506091955540" expanded="false" signature="3041:3051" ph="..." />
+            <marker date="1506091955540" expanded="false" signature="3114:3125" ph="..." />
+            <marker date="1506091955540" expanded="true" signature="4177:4206" ph="..." />
+            <marker date="1506091955540" expanded="true" signature="4281:4292" ph="..." />
+            <marker date="1506091955540" expanded="true" signature="4291:4292" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1611,8 +1568,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="580">
-            <caret line="117" column="17" lean-forward="true" selection-start-line="117" selection-start-column="10" selection-end-line="117" selection-end-column="17" />
+          <first_editor relative-caret-position="534">
+            <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />

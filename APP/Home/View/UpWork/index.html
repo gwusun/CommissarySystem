@@ -1141,7 +1141,6 @@
             $(function () {
                 $('.process_box').hide();
                 $('#submit_btn').click(function () {
-                    $(".file_box").hide();
                     //验证上传文件
                     var fileSize=getFileSize('upFile');
                     if(fileSize>UPLOADMAXFILESIZE){
@@ -1149,11 +1148,12 @@
                         $('#overFileMax').click();
                     }
                     if(fileSize<UPLOADMAXFILESIZE){
+                        $(".file_box").hide();
                         $('.process_box').show();
-
+                        $("#gridSystemModalLabel").html('文件上传进度');
+                        $("#submit_box").hide();
                     }
-                    $("#gridSystemModalLabel").html('文件上传进度');
-                    $("#submit_box").hide();
+
                 });
             });
 
@@ -1173,8 +1173,9 @@
                 $('#frm').submit(function () {
 
                     var upLoadFileSize=getFileSize('upFile');
+
                     //文件小于10m就提交，否者不执行任何动作
-                    if(upLoadFileSize<UPLOADMAXFILESIZE){
+                    if(upLoadFileSize<UPLOADMAXFILESIZE && upLoadFileSize>1){
                         var fd = new FormData($('#frm')['0']);
                         var xhr = new XMLHttpRequest();
                         xhr.onreadystatechange = function () {
@@ -1191,7 +1192,6 @@
                             if (Math.floor((load / total) * 100) == 100) {
                                 $("#info").html(xhr.responseText);
                                 $(".process_box").hide();
-//                                $("#btn_group2").show();
 
                             }
 

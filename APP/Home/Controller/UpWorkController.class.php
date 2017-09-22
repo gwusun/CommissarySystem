@@ -96,7 +96,7 @@ end;
 
                     /*删除就文件*/
                     $fd = new FileDelete();
-                    if(!$deskExistFileName ==$oldFile){
+                    if($deskExistFileName !=$oldFile){
                         if (!$fd->delOneFile($oldFile)) {
                             die('系统异常（删除旧文件错误）');
                         }
