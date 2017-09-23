@@ -934,7 +934,6 @@
                         dataType: "json",
                         type: 'get',
                         success: function (msg) {
-                            console.log(msg);
                             if (msg.status == 0) {
                                 $('#downloadFileTools').attr('href', msg.downloadUrl);
                                 $('#download').click();
@@ -1106,7 +1105,6 @@
                     dataType: 'json',
                     type: 'get',
                     success: function (msg) {
-                        console.log(msg);
                         if (msg.state === 0) {
                             $('#unload').click();
                         } else if (msg.state == 3) {
@@ -1140,21 +1138,6 @@
              * */
             $(function () {
                 $('.process_box').hide();
-                $('#submit_btn').click(function () {
-                    //验证上传文件
-                    var fileSize=getFileSize('upFile');
-                    if(fileSize>UPLOADMAXFILESIZE){
-                        $('#upFileBox').hide();//影藏文件上传框
-                        $('#overFileMax').click();
-                    }
-                    if(fileSize<UPLOADMAXFILESIZE){
-                        $(".file_box").hide();
-                        $('.process_box').show();
-                        $("#gridSystemModalLabel").html('文件上传进度');
-                        $("#submit_box").hide();
-                    }
-
-                });
             });
 
 
@@ -1172,30 +1155,51 @@
                 $("#btn_group2").hide();
                 $('#frm').submit(function () {
 
+                    //验证上传文件
+                    var fileSize=getFileSize('upFile');
+                    if(fileSize>UPLOADMAXFILESIZE){
+                        $('#upFileBox').hide();//影藏文件上传框
+                        $('#overFileMax').click();
+                    }
+
                     var upLoadFileSize=getFileSize('upFile');
 
                     //文件小于10m就提交，否者不执行任何动作
                     if(upLoadFileSize<UPLOADMAXFILESIZE && upLoadFileSize>1){
+
                         var fd = new FormData($('#frm')['0']);
                         var xhr = new XMLHttpRequest();
+
                         xhr.onreadystatechange = function () {
                             if (xhr.readyState == 4) {
                                 $("#info").html(xhr.responseText);
                             }
                         };
+
                         xhr.upload.onprogress = function (e) {
                             var load = e.loaded;
                             var total = e.total;
                             var per = Math.floor((load / total) * 100) + "%";
                             $("#proBar").width(per);
                             $("#proBar").html(per);
-                            if (Math.floor((load / total) * 100) == 100) {
-                                $("#info").html(xhr.responseText);
-                                $(".process_box").hide();
+//                            if (Math.floor((load / total) * 100) == 100) {
+//                                $("#info").html(xhr.responseText);
+////                                $(".process_box").hide();
+//
+//                            }
 
-                            }
 
                         };
+                        xhr.upload.onloadstart=function (event) {
+                            $(".file_box").hide();
+                            $('.process_box').show();
+                            $("#gridSystemModalLabel").html('文件上传进度');
+                            $("#submit_box").hide();
+                        }
+
+                        xhr.upload.onloadend=function (event) {
+                            $(".process_box").hide();
+                        }
                         xhr.open('post', "{:U('UpWork/fileSave')}");
                         xhr.send(fd);
                     }
@@ -1306,7 +1310,6 @@
                                     var userInfo = v.t_user_info;
                                     var user_item = "<ol>";
                                     $.each(userInfo, function (k, v) {
-//                                        console.log(v);
                                         user_item += "<li>";
                                         user_item += v.name + v.num;
                                         user_item += "</li>";
@@ -1321,7 +1324,6 @@
                                     item += "</tr>";
                                     teamInfo += item;
                                 });
-                                console.log(teamInfo);
                                 $('.team_table tr:not(:first)').remove();
                                 $('.team_table').append(teamInfo);
                             }
