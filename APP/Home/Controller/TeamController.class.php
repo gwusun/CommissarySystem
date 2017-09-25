@@ -124,7 +124,7 @@ class TeamController extends \Think\Controller
         $teamDate['t_leader_num']=I('post.leaderNum');
         $teamDate['user_stu_num']=session('user_stu_num');
         if($this->M->add($teamDate)){
-            $this->success("修改成功！！！", U('UpWork/index'), 3);
+            $this->success("修改成功！！！", U('UpWork/index'), 1);
         }
     }
 
@@ -137,7 +137,7 @@ class TeamController extends \Think\Controller
     {
         $stuNum=session('user_stu_num');
         if(!$stuNum){
-            $this->success("尚未登陆，请登录后重试！", U('UpWork/index'), 3);
+            $this->success("请登录后再试！", U('UpWork/index'), 3);
             exit;
         }
     }
@@ -149,7 +149,7 @@ class TeamController extends \Think\Controller
     {
         //检查是否ok
         if(!$this->M->checkIsAccess($id)){
-            $this->success("你不是组长，不能修改！", U('UpWork/index'), 3);exit;
+            $this->success("只允许组长或组创建者操作！你没有权限更改！", U('UpWork/index'), 3);exit;
         }
     }
 
@@ -160,7 +160,7 @@ class TeamController extends \Think\Controller
         $this->isAccess($id);
         if(!$this->M->clearOldDate($id)){
 
-            $this->error("你不是组长，不能删除！", U('UpWork/index'), 3);exit;
+            $this->error("只允许组长或组创建者操作！你没有权限更改！", U('UpWork/index'), 3);exit;
         }else{
             $this->success("删除成功！", U('UpWork/index'), 3);exit;
         }

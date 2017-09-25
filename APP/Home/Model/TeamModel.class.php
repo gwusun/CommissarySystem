@@ -230,7 +230,9 @@ class TeamModel extends \Think\Model
         $info = $this->find($id);
         $stu_num = $info['user_stu_num'];
         $s_stu_num = session('user_stu_num');
-        if ($stu_num !== $s_stu_num) {
+        $team_leader=$info['t_leader_num'];
+        //允许组长和团队创建者修改
+        if ($stu_num !== $s_stu_num && $stu_num !==$team_leader) {
             return false;
         }
         return true;
